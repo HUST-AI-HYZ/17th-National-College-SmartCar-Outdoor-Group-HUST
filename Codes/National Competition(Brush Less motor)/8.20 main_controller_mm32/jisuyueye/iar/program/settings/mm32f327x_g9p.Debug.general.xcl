@@ -1,0 +1,15 @@
+"E:\IAR8.3\arm\bin\armproc.dll" 
+
+"E:\IAR8.3\arm\bin\armJET.dll" 
+
+"D:\极速越野\【比赛】\7.24  v1.2 路径调节，删了参数\jisuyueye\iar\program\Debug\Exe\MM32F3277.out" 
+
+--plugin="E:\IAR8.3\arm\bin\armbat.dll" 
+
+--device_macro="E:\IAR8.3\arm\config\debugger\MindMotion\MM32F3270.dmac" 
+
+--flash_loader="E:\IAR8.3\arm\config\flashloader\MindMotion\FlashMM32F327xGx.board" 
+
+
+
+

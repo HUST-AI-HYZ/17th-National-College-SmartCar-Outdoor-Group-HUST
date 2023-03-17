@@ -1,0 +1,959 @@
+Dependencies for Project 'seekfree_bldc', Target 'seekfree_bldc': (DO NOT MODIFY !)
+F (..\USER\main.c)(0x62FC3702)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\hardware\gpio.h)(0x61EBC801)
+I (..\..\Libraries\hardware\common.h)(0x61EBC801)
+I (..\..\Libraries\hardware\adc.h)(0x61EBC801)
+I (..\..\Libraries\hardware\timer.h)(0x61EBC802)
+I (..\..\Libraries\hardware\pwm_input.h)(0x61EBC801)
+I (..\..\Libraries\hardware\opamp.h)(0x61EBC801)
+I (..\..\Libraries\hardware\comp.h)(0x61EBC801)
+I (..\..\Libraries\hardware\uart.h)(0x61EBC802)
+I (..\..\Libraries\bldc\hall.h)(0x61EBC801)
+I (..\..\Libraries\bldc\pid.h)(0x61EBC801)
+I (..\..\Libraries\bldc\motor.h)(0x61EBC801)
+I (..\..\Libraries\bldc\move_filter.h)(0x61EBC801)
+I (..\..\Libraries\bldc\virsco.h)(0x61EBC801)
+F (..\USER\isr.c)(0x62FF72A0)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\isr.o --omf_browse .\objects\isr.crf --depend .\objects\isr.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\hardware\gpio.h)(0x61EBC801)
+I (..\..\Libraries\hardware\common.h)(0x61EBC801)
+I (..\..\Libraries\hardware\adc.h)(0x61EBC801)
+I (..\..\Libraries\hardware\timer.h)(0x61EBC802)
+I (..\..\Libraries\hardware\pwm_input.h)(0x61EBC801)
+I (..\..\Libraries\hardware\opamp.h)(0x61EBC801)
+I (..\..\Libraries\hardware\comp.h)(0x61EBC801)
+I (..\..\Libraries\bldc\hall.h)(0x61EBC801)
+I (..\..\Libraries\bldc\pid.h)(0x61EBC801)
+I (..\..\Libraries\bldc\motor.h)(0x61EBC801)
+I (..\..\Libraries\bldc\move_filter.h)(0x61EBC801)
+I (..\..\Libraries\bldc\bldc_config.h)(0x62FCD8A8)
+I (..\USER\isr.h)(0x61EBC803)
+F (..\USER\isr.h)(0x61EBC803)()
+F (..\..\Libraries\hardware\adc.c)(0x61EBC801)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\hardware\adc.h)(0x61EBC801)
+I (..\..\Libraries\hardware\common.h)(0x61EBC801)
+F (..\..\Libraries\hardware\adc.h)(0x61EBC801)()
+F (..\..\Libraries\hardware\common.c)(0x61EBC801)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\common.o --omf_browse .\objects\common.crf --depend .\objects\common.d)
+I (..\..\Libraries\hardware\common.h)(0x61EBC801)
+F (..\..\Libraries\hardware\common.h)(0x61EBC801)()
+F (..\..\Libraries\hardware\comp.c)(0x61EBC801)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\comp.o --omf_browse .\objects\comp.crf --depend .\objects\comp.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\bldc\bldc_config.h)(0x62FCD8A8)
+I (..\..\Libraries\hardware\comp.h)(0x61EBC801)
+F (..\..\Libraries\hardware\comp.h)(0x61EBC801)()
+F (..\..\Libraries\hardware\gpio.c)(0x61EBC801)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\hardware\gpio.h)(0x61EBC801)
+I (..\..\Libraries\hardware\common.h)(0x61EBC801)
+F (..\..\Libraries\hardware\gpio.h)(0x61EBC801)()
+F (..\..\Libraries\hardware\opamp.c)(0x61EBC801)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\opamp.o --omf_browse .\objects\opamp.crf --depend .\objects\opamp.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\hardware\opamp.h)(0x61EBC801)
+F (..\..\Libraries\hardware\opamp.h)(0x61EBC801)()
+F (..\..\Libraries\hardware\pwm_input.c)(0x61EBC801)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\pwm_input.o --omf_browse .\objects\pwm_input.crf --depend .\objects\pwm_input.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\hal_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\bldc\motor.h)(0x61EBC801)
+I (..\..\Libraries\hardware\common.h)(0x61EBC801)
+I (..\..\Libraries\bldc\pid.h)(0x61EBC801)
+I (..\..\Libraries\hardware\pwm_input.h)(0x61EBC801)
+F (..\..\Libraries\hardware\pwm_input.h)(0x61EBC801)()
+F (..\..\Libraries\hardware\timer.c)(0x61EBC802)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\hardware\timer.h)(0x61EBC802)
+I (..\..\Libraries\hardware\common.h)(0x61EBC801)
+F (..\..\Libraries\hardware\timer.h)(0x61EBC802)()
+F (..\..\Libraries\hardware\uart.c)(0x61EBC802)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\hardware\uart.h)(0x61EBC802)
+I (..\..\Libraries\hardware\common.h)(0x61EBC801)
+F (..\..\Libraries\hardware\uart.h)(0x61EBC802)()
+F (..\..\Libraries\bldc\motor.c)(0x61EBC801)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\motor.o --omf_browse .\objects\motor.crf --depend .\objects\motor.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\bldc\hall.h)(0x61EBC801)
+I (..\..\Libraries\hardware\timer.h)(0x61EBC802)
+I (..\..\Libraries\hardware\common.h)(0x61EBC801)
+I (..\..\Libraries\hardware\adc.h)(0x61EBC801)
+I (..\..\Libraries\hardware\gpio.h)(0x61EBC801)
+I (..\..\Libraries\bldc\move_filter.h)(0x61EBC801)
+I (..\..\Libraries\hardware\pwm_input.h)(0x61EBC801)
+I (..\..\Libraries\bldc\bldc_config.h)(0x62FCD8A8)
+I (..\..\Libraries\bldc\motor.h)(0x61EBC801)
+I (..\..\Libraries\bldc\pid.h)(0x61EBC801)
+F (..\..\Libraries\bldc\motor.h)(0x61EBC801)()
+F (..\..\Libraries\bldc\pid.c)(0x61EBC801)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\pid.o --omf_browse .\objects\pid.crf --depend .\objects\pid.d)
+I (..\..\Libraries\hardware\timer.h)(0x61EBC802)
+I (..\..\Libraries\hardware\common.h)(0x61EBC801)
+I (..\..\Libraries\bldc\motor.h)(0x61EBC801)
+I (..\..\Libraries\bldc\pid.h)(0x61EBC801)
+F (..\..\Libraries\bldc\pid.h)(0x61EBC801)()
+F (..\..\Libraries\bldc\hall.c)(0x61EBC801)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hall.o --omf_browse .\objects\hall.crf --depend .\objects\hall.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\bldc\move_filter.h)(0x61EBC801)
+I (..\..\Libraries\hardware\common.h)(0x61EBC801)
+I (..\..\Libraries\bldc\motor.h)(0x61EBC801)
+I (..\..\Libraries\bldc\pid.h)(0x61EBC801)
+I (..\..\Libraries\hardware\gpio.h)(0x61EBC801)
+I (..\..\Libraries\bldc\hall.h)(0x61EBC801)
+I (..\..\Libraries\hardware\timer.h)(0x61EBC802)
+F (..\..\Libraries\bldc\hall.h)(0x61EBC801)()
+F (..\..\Libraries\bldc\move_filter.c)(0x61EBC801)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\move_filter.o --omf_browse .\objects\move_filter.crf --depend .\objects\move_filter.d)
+I (..\..\Libraries\bldc\motor.h)(0x61EBC801)
+I (..\..\Libraries\hardware\common.h)(0x61EBC801)
+I (..\..\Libraries\bldc\pid.h)(0x61EBC801)
+I (..\..\Libraries\bldc\move_filter.h)(0x61EBC801)
+F (..\..\Libraries\bldc\move_filter.h)(0x61EBC801)()
+F (..\..\Libraries\bldc\virsco.c)(0x61EBC801)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\virsco.o --omf_browse .\objects\virsco.crf --depend .\objects\virsco.d)
+I (..\..\Libraries\bldc\virsco.h)(0x61EBC801)
+I (..\..\Libraries\hardware\common.h)(0x61EBC801)
+F (..\..\Libraries\bldc\virsco.h)(0x61EBC801)()
+F (..\..\Libraries\bldc\bldc_config.h)(0x62FCD8A8)()
+F (..\..\Libraries\bldc\version.txt)(0x61EBC801)()
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_adc.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_adc.o --omf_browse .\objects\hal_adc.crf --depend .\objects\hal_adc.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_comp.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_comp.o --omf_browse .\objects\hal_comp.crf --depend .\objects\hal_comp.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_crc.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_crc.o --omf_browse .\objects\hal_crc.crf --depend .\objects\hal_crc.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_div.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_div.o --omf_browse .\objects\hal_div.crf --depend .\objects\hal_div.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_dma.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_dma.o --omf_browse .\objects\hal_dma.crf --depend .\objects\hal_dma.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_exti.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_exti.o --omf_browse .\objects\hal_exti.crf --depend .\objects\hal_exti.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_flash.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_flash.o --omf_browse .\objects\hal_flash.crf --depend .\objects\hal_flash.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_gpio.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_gpio.o --omf_browse .\objects\hal_gpio.crf --depend .\objects\hal_gpio.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_i2c.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_i2c.o --omf_browse .\objects\hal_i2c.crf --depend .\objects\hal_i2c.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_iwdg.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_iwdg.o --omf_browse .\objects\hal_iwdg.crf --depend .\objects\hal_iwdg.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_misc.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_misc.o --omf_browse .\objects\hal_misc.crf --depend .\objects\hal_misc.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_op.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_op.o --omf_browse .\objects\hal_op.crf --depend .\objects\hal_op.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_pwr.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_pwr.o --omf_browse .\objects\hal_pwr.crf --depend .\objects\hal_pwr.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_rcc.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_rcc.o --omf_browse .\objects\hal_rcc.crf --depend .\objects\hal_rcc.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_spi.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_spi.o --omf_browse .\objects\hal_spi.crf --depend .\objects\hal_spi.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_syscfg.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_syscfg.o --omf_browse .\objects\hal_syscfg.crf --depend .\objects\hal_syscfg.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_tim.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_tim.o --omf_browse .\objects\hal_tim.crf --depend .\objects\hal_tim.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_uart.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_uart.o --omf_browse .\objects\hal_uart.crf --depend .\objects\hal_uart.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\src\HAL_wwdg.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\hal_wwdg.o --omf_browse .\objects\hal_wwdg.crf --depend .\objects\hal_wwdg.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\system_MM32SPIN2xx_p.c)(0x61EBC803)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections --signed_chars -I ..\..\Libraries\sdk\CMSIS\KEIL_CORE -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include -I ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc -I ..\..\Libraries\hardware -I ..\..\Libraries\bldc -I ..\USER-I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include-D__UVISION_VERSION="525" -DMM32SPIN27PF -DUSE_STDPERIPH_DRIVER-o .\objects\system_mm32spin2xx_p.o --omf_browse .\objects\system_mm32spin2xx_p.crf --depend .\objects\system_mm32spin2xx_p.d)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\HAL_device.h)(0x61EBC803)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\MM32SPIN2xx_p.h)(0x61EBC803)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cm0.h)(0x61EBC802)
+I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmInstr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\CMSIS\KEIL_CORE\core_cmFunc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_conf.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_adc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_crc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_comp.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_dma.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_div.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_exti.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_flash.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_gpio.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_i2c.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_iwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_op.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_pwr.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_rcc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_spi.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_tim.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_uart.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_wwdg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_misc.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\HAL_lib\inc\HAL_syscfg.h)(0x61EBC802)
+I (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Include\system_MM32SPIN2xx_p.h)(0x61EBC803)
+F (..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm\startup_MM32SPIN2xx_p.s)(0x61EBC803)(--cpu Cortex-M0 -g --apcs=interwork -I.\RTE\_seekfree_bldc-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN2x\Include-IE:\keil5\ARM\CMSIS\Include-IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include--pd "__UVISION_VERSION SETA 525" --pd "MM32SPIN27PF SETA 1"--list .\listings\startup_mm32spin2xx_p.lst --xref -o .\objects\startup_mm32spin2xx_p.o --depend .\objects\startup_mm32spin2xx_p.d)

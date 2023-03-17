@@ -1,0 +1,1199 @@
+###############################################################################
+#
+# IAR ELF Linker V8.32.3.193/W32 for ARM                  24/Jul/2022  11:08:34
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Exe\MM32F3277.out
+#    Map file     =  
+#        D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\List\MM32F3277.map
+#    Command line =  
+#        -f C:\Users\lenovo\AppData\Local\Temp\EWFB5.tmp
+#        ("D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\Algorithm.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\button.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\diskio.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\encoder.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\ff.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\ffsystem.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\ffunicode.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\flash.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\gps.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_adc.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_comp.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_dac.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_dma.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_exti.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_fsmc.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_gpio.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_i2c.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_iwdg.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_rcc.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_rtc.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_sdio.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_spi.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_syscfg.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_tim_16b.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_tim_32b.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_tim_adv.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_tim_basic.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_uart.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_usb.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\hal_wwdg.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\isr.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\led.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\main.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\motor.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\parameter.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\route_generating.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\sd_write.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\show_page.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\startup_mm32f3277g.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\system_mm32f3277g.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\Vofa.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_common_clock.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_common_debug.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_common_fifo.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_common_font.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_common_function.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_common_interrupt.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_absolute_encoder.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_bluetooth_ch9141.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_camera.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_gps_tau1201.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_icm20602.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_ips114.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_ips200.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_key.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_mpu6050.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_mt9v03x.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_oled.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_ov7725.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_scc8660.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_sdcard.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_tft180.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_tsl1401.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_type.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_virtual_oscilloscope.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_device_wireless_uart.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_adc.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_dac.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_delay.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_dma.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_encoder.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_exti.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_flash.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_fsmc.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_gpio.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_iic.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_pit.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_pwm.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_sdio.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_soft_iic.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_soft_spi.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_spi.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_timer.o"
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Obj\zf_driver_uart.o"
+#        --no_out_extension -o "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\Exe\MM32F3277.out" --map
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\Debug\List\MM32F3277.map" --config
+#        "D:\极速越野\旧版程序\7.17 有刷
+#        薇草修改\jisuyueye\iar\program\MM32F3270.icf" --semihosting
+#        --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x807'ffff] { ro };
+define block CSTACK with size = 8K, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2001'ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x190
+  .intvec            ro code   0x800'0000   0x190  startup_mm32f3277g.o [1]
+                             - 0x800'0190   0x190
+
+"P1":                                      0xb423
+  .text              ro code   0x800'0190  0x1c58  route_generating.o [1]
+  .text              ro code   0x800'1de8     0x6  ABImemclr4.o [4]
+  .text              ro code   0x800'1dee    0x7a  lz77_init_single.o [4]
+  .text              ro code   0x800'1e68    0xa6  ABImemcpy.o [4]
+  .text              ro code   0x800'1f0e    0x3a  zero_init3.o [4]
+  .text              ro code   0x800'1f48   0xb88  gps.o [1]
+  .text              ro code   0x800'2ad0   0x17a  DblAdd.o [3]
+  .text              ro code   0x800'2c4a     0xa  xsprout.o [2]
+  .text              ro code   0x800'2c54   0x246  DblDiv.o [3]
+  .text              ro code   0x800'2e9a     0x2  startup_mm32f3277g.o [1]
+  .text              ro code   0x800'2e9c    0x48  FltToDbl.o [3]
+  .text              ro code   0x800'2ee4   0x1a2  DblMul.o [3]
+  .text              ro code   0x800'3088    0x3a  DblToS32.o [3]
+  .text              ro code   0x800'30c4    0x22  S32ToDbl.o [3]
+  .text              ro code   0x800'30e8    0xe2  DblSub.o [3]
+  .text              ro code   0x800'31cc    0x2e  DblCmpLe.o [3]
+  .text              ro code   0x800'31fc    0x2e  DblCmpGe.o [3]
+  .text              ro code   0x800'322c    0x68  DblToFlt.o [3]
+  .text              ro code   0x800'3294    0x1a  U32ToDbl.o [3]
+  .text              ro code   0x800'32b0    0x20  DblCmpEq.o [3]
+  .text              ro code   0x800'32d0   0x844  zf_device_tft180.o [1]
+  .text              ro code   0x800'3b14   0x320  zf_driver_gpio.o [1]
+  .text              ro code   0x800'3e34   0x910  flash.o [1]
+  .text              ro code   0x800'4744    0x32  ABImemset48.o [4]
+  .text              ro code   0x800'4776    0x30  strstr.o [2]
+  .text              ro code   0x800'47a8   0x420  cos_sin64.o [3]
+  .text              ro code   0x800'4bc8    0xf2  sqrt.o [3]
+  .text              ro code   0x800'4cbc   0x10a  atan2_64.o [3]
+  .text              ro code   0x800'4dc8   0x1a8  fmod.o [3]
+  .text              ro code   0x800'4f70   0x360  zf_driver_spi.o [1]
+  .text              ro code   0x800'52d0   0x30c  zf_common_debug.o [1]
+  .text              ro code   0x800'55dc    0x54  zf_driver_delay.o [1]
+  .text              ro code   0x800'5630    0xd8  FltMul.o [3]
+  .text              ro code   0x800'5708    0x2a  FltToS32.o [3]
+  .text              ro code   0x800'5734   0x1f0  zf_driver_flash.o [1]
+  .text              ro code   0x800'5924    0x24  S32ToFlt.o [3]
+  .text              ro code   0x800'5948    0xe2  FltAdd.o [3]
+  .text              ro code   0x800'5a2c    0x16  strchr.o [4]
+  .text              ro code   0x800'5a44   0x210  iar_Atan64.o [3]
+  .text              ro code   0x800'5c54   0x314  zf_driver_uart.o [1]
+  .text              ro code   0x800'5f68    0x36  strlen.o [4]
+  .text              ro code   0x800'5fa0    0x40  sprintf.o [2]
+  .text              ro code   0x800'5fe0    0x66  ABImemset.o [4]
+  .text              ro code   0x800'6048   0x112  zf_common_interrupt.o [1]
+  .text              ro code   0x800'615c    0x80  FltSub.o [3]
+  .text              ro code   0x800'61dc   0xc16  xprintflarge_nomb.o [2]
+  .text              ro code   0x800'6df4    0x40  xfail_s.o [2]
+  .text              ro code   0x800'6e34    0x58  memchr.o [4]
+  .text              ro code   0x800'6e8c   0x230  I64DivMod.o [4]
+  .text              ro code   0x800'70bc    0x70  frexp.o [3]
+  .text              ro code   0x800'712c    0x28  DblToU32.o [3]
+  .text              ro code   0x800'7154     0x8  xlocale_c.o [2]
+  .text              ro code   0x800'715c     0x6  abort.o [2]
+  .text              ro code   0x800'7164     0x2  I64DivZer.o [4]
+  .text              ro code   0x800'7168    0x14  exit.o [5]
+  .text              ro code   0x800'717c   0xc80  isr.o [1]
+  .text              ro code   0x800'7dfc   0x16c  encoder.o [1]
+  .text              ro code   0x800'7f68    0x24  FltCmpGe.o [3]
+  .text              ro code   0x800'7f8c   0x2c4  motor.o [1]
+  .text              ro code   0x800'8250    0x12  strcmp.o [4]
+  .text              ro code   0x800'8264    0x18  strcpy.o [4]
+  .text              ro code   0x800'827c    0x24  FltCmpLe.o [3]
+  .text              ro code   0x800'82a0   0x2b8  zf_driver_pwm.o [1]
+  .text              ro code   0x800'8558    0xbc  zf_device_tsl1401.o [1]
+  .text              ro code   0x800'8614   0x1b8  zf_device_type.o [1]
+  .text              ro code   0x800'87cc   0x31c  zf_driver_encoder.o [1]
+  .text              ro code   0x800'8ae8    0x22  FltToU32.o [3]
+  .text              ro code   0x800'8b0c    0x1c  U32ToFlt.o [3]
+  .text              ro code   0x800'8b28    0xfc  FltDiv.o [3]
+  .text              ro code   0x800'8c24    0xd0  zf_driver_timer.o [1]
+  .text              ro code   0x800'8cf4    0x8c  zf_driver_adc.o [1]
+  .text              ro code   0x800'8d80    0xb8  zf_driver_dma.o [1]
+  .text              ro code   0x800'8e38    0x4c  zf_device_wireless_uart.o [1]
+  .text              ro code   0x800'8e84    0x20  zf_device_bluetooth_ch9141.o [1]
+  .text              ro code   0x800'8ea4    0xb0  zf_common_fifo.o [1]
+  .text              ro code   0x800'8f54   0xbb8  show_page.o [1]
+  .text              ro code   0x800'9b0c   0x430  button.o [1]
+  .rodata            const     0x800'9f3c   0x5f0  zf_common_font.o [1]
+  .text              ro code   0x800'a52c   0x27c  Vofa.o [1]
+  .text              ro code   0x800'a7a8   0x228  zf_common_clock.o [1]
+  .text              ro code   0x800'a9d0    0x14  zf_common_function.o [1]
+  .text              ro code   0x800'a9e4   0x1cc  zf_device_gps_tau1201.o [1]
+  .text              ro code   0x800'abb0   0x158  main.o [1]
+  .text              ro code   0x800'ad08   0x118  zf_driver_pit.o [1]
+  .rodata            const     0x800'ae20    0x90  zf_driver_encoder.o [1]
+  .rodata            const     0x800'aeb0    0x8c  zf_driver_pit.o [1]
+  .rodata            const     0x800'af3c    0x54  zf_device_tft180.o [1]
+  .rodata            const     0x800'af90    0x50  zf_driver_pwm.o [1]
+  .rodata            const     0x800'afe0    0x40  iar_Atan64.o [3]
+  .text              ro code   0x800'b020    0x28  data_init.o [4]
+  .iar.init_table    const     0x800'b048    0x20  - Linker created -
+  .rodata            const     0x800'b068    0x20  zf_common_debug.o [1]
+  .text              ro code   0x800'b088    0x1e  cmain.o [4]
+  .text              ro code   0x800'b0a6     0x4  low_level_init.o [2]
+  .text              ro code   0x800'b0aa     0x4  exit.o [2]
+  .text              ro code   0x800'b0b0     0xa  cexit.o [4]
+  .rodata            const     0x800'b0bc    0x1c  zf_device_gps_tau1201.o [1]
+  .rodata            const     0x800'b0d8    0x10  zf_common_debug.o [1]
+  .rodata            const     0x800'b0e8    0x10  zf_common_debug.o [1]
+  .text              ro code   0x800'b0f8    0x10  startup_mm32f3277g.o [1]
+  .text              ro code   0x800'b108    0x10  system_mm32f3277g.o [1]
+  .rodata            const     0x800'b118     0xc  route_generating.o [1]
+  .rodata            const     0x800'b124     0xc  route_generating.o [1]
+  .rodata            const     0x800'b130     0xc  show_page.o [1]
+  .rodata            const     0x800'b13c     0xc  show_page.o [1]
+  .rodata            const     0x800'b148     0xc  show_page.o [1]
+  .rodata            const     0x800'b154     0xc  show_page.o [1]
+  .rodata            const     0x800'b160     0xc  show_page.o [1]
+  .rodata            const     0x800'b16c     0xc  show_page.o [1]
+  .rodata            const     0x800'b178     0xc  show_page.o [1]
+  .rodata            const     0x800'b184     0xc  show_page.o [1]
+  .rodata            const     0x800'b190     0xc  show_page.o [1]
+  .rodata            const     0x800'b19c     0xc  show_page.o [1]
+  .rodata            const     0x800'b1a8     0xc  show_page.o [1]
+  .rodata            const     0x800'b1b4     0xc  show_page.o [1]
+  .rodata            const     0x800'b1c0     0xc  show_page.o [1]
+  .rodata            const     0x800'b1cc     0xc  show_page.o [1]
+  .rodata            const     0x800'b1d8     0xc  show_page.o [1]
+  .rodata            const     0x800'b1e4     0xc  show_page.o [1]
+  .rodata            const     0x800'b1f0     0xc  show_page.o [1]
+  .rodata            const     0x800'b1fc     0xc  show_page.o [1]
+  .rodata            const     0x800'b208     0xc  show_page.o [1]
+  .rodata            const     0x800'b214     0xc  show_page.o [1]
+  .rodata            const     0x800'b220     0xc  show_page.o [1]
+  .rodata            const     0x800'b22c     0xc  show_page.o [1]
+  .rodata            const     0x800'b238     0xc  show_page.o [1]
+  .rodata            const     0x800'b244     0xc  zf_common_debug.o [1]
+  .rodata            const     0x800'b250     0xc  zf_common_debug.o [1]
+  .rodata            const     0x800'b25c     0xc  zf_device_gps_tau1201.o [1]
+  .rodata            const     0x800'b268     0xc  zf_device_gps_tau1201.o [1]
+  .rodata            const     0x800'b274     0xc  zf_device_gps_tau1201.o [1]
+  .rodata            const     0x800'b280     0xc  zf_device_gps_tau1201.o [1]
+  .rodata            const     0x800'b28c     0xc  zf_device_gps_tau1201.o [1]
+  .rodata            const     0x800'b298     0xc  zf_device_gps_tau1201.o [1]
+  .rodata            const     0x800'b2a4     0xc  zf_device_gps_tau1201.o [1]
+  .rodata            const     0x800'b2b0     0xc  zf_device_gps_tau1201.o [1]
+  .rodata            const     0x800'b2bc     0xc  zf_device_gps_tau1201.o [1]
+  .rodata            const     0x800'b2c8     0xc  zf_device_gps_tau1201.o [1]
+  .rodata            const     0x800'b2d4     0xc  zf_device_gps_tau1201.o [1]
+  .text              ro code   0x800'b2e0     0xc  cstartup_M.o [4]
+  .rodata            const     0x800'b2ec     0x8  show_page.o [1]
+  .rodata            const     0x800'b2f4     0x8  show_page.o [1]
+  .rodata            const     0x800'b2fc     0x8  show_page.o [1]
+  .rodata            const     0x800'b304     0x8  show_page.o [1]
+  .rodata            const     0x800'b30c     0x8  show_page.o [1]
+  .rodata            const     0x800'b314     0x8  show_page.o [1]
+  .rodata            const     0x800'b31c     0x8  show_page.o [1]
+  .rodata            const     0x800'b324     0x8  show_page.o [1]
+  .rodata            const     0x800'b32c     0x8  show_page.o [1]
+  .rodata            const     0x800'b334     0x8  show_page.o [1]
+  .rodata            const     0x800'b33c     0x8  show_page.o [1]
+  .rodata            const     0x800'b344     0x8  show_page.o [1]
+  .rodata            const     0x800'b34c     0x8  show_page.o [1]
+  .rodata            const     0x800'b354     0x8  show_page.o [1]
+  .rodata            const     0x800'b35c     0x8  zf_driver_pit.o [1]
+  .rodata            const     0x800'b364     0x4  show_page.o [1]
+  .rodata            const     0x800'b368     0x4  show_page.o [1]
+  .rodata            const     0x800'b36c     0x4  show_page.o [1]
+  .rodata            const     0x800'b370     0x4  show_page.o [1]
+  .rodata            const     0x800'b374     0x4  show_page.o [1]
+  .rodata            const     0x800'b378     0x4  show_page.o [1]
+  .rodata            const     0x800'b37c     0x4  xlocale_c.o [2]
+  .rodata            const     0x800'b380     0x0  zero_init3.o [4]
+  .rodata            const     0x800'b380     0x0  lz77_init_single.o [4]
+  Initializer bytes  const     0x800'b380   0x233  <for P2-1>
+                             - 0x800'b5b3  0xb423
+
+"P2", part 1 of 3:                          0x497
+  P2-1                        0x2000'0000   0x497  <Init block>
+    .data            inited   0x2000'0000    0x38  show_page.o [1]
+    .data            inited   0x2000'0038   0x114  flash.o [1]
+    .data            inited   0x2000'014c     0xc  gps.o [1]
+    .data            inited   0x2000'0158     0x4  gps.o [1]
+    .data            inited   0x2000'015c     0x4  gps.o [1]
+    .data            inited   0x2000'0160     0x4  gps.o [1]
+    .data            inited   0x2000'0164     0x4  gps.o [1]
+    .data            inited   0x2000'0168     0x4  gps.o [1]
+    .data            inited   0x2000'016c     0x4  gps.o [1]
+    .data            inited   0x2000'0170     0x4  parameter.o [1]
+    .data            inited   0x2000'0174     0x4  parameter.o [1]
+    .data            inited   0x2000'0178     0x4  parameter.o [1]
+    .data            inited   0x2000'017c     0x4  parameter.o [1]
+    .data            inited   0x2000'0180     0xc  parameter.o [1]
+    .data            inited   0x2000'018c     0x4  parameter.o [1]
+    .data            inited   0x2000'0190     0x4  show_page.o [1]
+    .data            inited   0x2000'0194    0x10  show_page.o [1]
+    .data            inited   0x2000'01a4    0x1c  show_page.o [1]
+    .data            inited   0x2000'01c0    0x48  show_page.o [1]
+    .data            inited   0x2000'0208    0x48  show_page.o [1]
+    .data            inited   0x2000'0250    0x3c  show_page.o [1]
+    .data            inited   0x2000'028c    0x48  show_page.o [1]
+    .data            inited   0x2000'02d4    0x48  show_page.o [1]
+    .data            inited   0x2000'031c    0x24  show_page.o [1]
+    .data            inited   0x2000'0340    0x48  show_page.o [1]
+    .data            inited   0x2000'0388    0x48  show_page.o [1]
+    .data            inited   0x2000'03d0     0x4  zf_common_clock.o [1]
+    .data            inited   0x2000'03d4     0xc  zf_driver_adc.o [1]
+    .data            inited   0x2000'03e0     0x8  zf_driver_dma.o [1]
+    .data            inited   0x2000'03e8     0x8  zf_driver_encoder.o [1]
+    .data            inited   0x2000'03f0    0x20  zf_driver_gpio.o [1]
+    .data            inited   0x2000'0410     0xc  zf_driver_spi.o [1]
+    .data            inited   0x2000'041c    0x20  zf_driver_uart.o [1]
+    .data            inited   0x2000'043c     0x8  zf_driver_uart.o [1]
+    .data            inited   0x2000'0444    0x38  xlocale_c.o [2]
+    .data            inited   0x2000'047c     0x2  gps.o [1]
+    .data            inited   0x2000'047e     0x2  gps.o [1]
+    .data            inited   0x2000'0480     0x2  main.o [1]
+    .data            inited   0x2000'0482     0x2  main.o [1]
+    .data            inited   0x2000'0484     0x2  parameter.o [1]
+    .data            inited   0x2000'0486     0x2  parameter.o [1]
+    .data            inited   0x2000'0488     0x2  parameter.o [1]
+    .data            inited   0x2000'048a     0x2  parameter.o [1]
+    .data            inited   0x2000'048c     0x2  parameter.o [1]
+    .data            inited   0x2000'048e     0x2  zf_device_tft180.o [1]
+    .data            inited   0x2000'0490     0x2  zf_device_tft180.o [1]
+    .data            inited   0x2000'0492     0x1  encoder.o [1]
+    .data            inited   0x2000'0493     0x1  zf_common_debug.o [1]
+    .data            inited   0x2000'0494     0x1  zf_device_tft180.o [1]
+    .data            inited   0x2000'0495     0x1  zf_device_tft180.o [1]
+    .data            inited   0x2000'0496     0x1  zf_device_tft180.o [1]
+                            - 0x2000'0497   0x497
+
+"P2", part 2 of 3:                         0x4474
+  .bss               zero     0x2000'0498  0x1820  gps.o [1]
+  .bss               zero     0x2000'1cb8  0x17c0  gps.o [1]
+  .bss               zero     0x2000'3478   0xe10  route_generating.o [1]
+  .bss               zero     0x2000'4288   0x200  zf_device_tsl1401.o [1]
+  .bss               zero     0x2000'4488   0x100  isr.o [1]
+  .bss               zero     0x2000'4588    0xf8  gps.o [1]
+  .bss               zero     0x2000'4680    0x60  route_generating.o [1]
+  .bss               zero     0x2000'46e0    0x58  gps.o [1]
+  .bss               zero     0x2000'4738    0x30  gps.o [1]
+  .bss               zero     0x2000'4768    0x30  gps.o [1]
+  .bss               zero     0x2000'4798    0x20  parameter.o [1]
+  .bss               zero     0x2000'47b8    0x1c  parameter.o [1]
+  .bss               zero     0x2000'47d4    0x14  isr.o [1]
+  .bss               zero     0x2000'47e8    0x14  isr.o [1]
+  .bss               zero     0x2000'47fc    0x14  zf_common_debug.o [1]
+  .bss               zero     0x2000'4810    0x14  zf_device_bluetooth_ch9141.o [1]
+  .bss               zero     0x2000'4824    0x14  zf_device_wireless_uart.o [1]
+  .bss               zero     0x2000'4838    0x10  main.o [1]
+  .bss               zero     0x2000'4848     0x8  zf_driver_timer.o [1]
+  .bss               zero     0x2000'4850     0x4  gps.o [1]
+  .bss               zero     0x2000'4854     0x4  gps.o [1]
+  .bss               zero     0x2000'4858     0x4  gps.o [1]
+  .bss               zero     0x2000'485c     0x4  gps.o [1]
+  .bss               zero     0x2000'4860     0x4  gps.o [1]
+  .bss               zero     0x2000'4864     0x4  gps.o [1]
+  .bss               zero     0x2000'4868     0x4  gps.o [1]
+  .bss               zero     0x2000'486c     0x4  gps.o [1]
+  .bss               zero     0x2000'4870     0x4  isr.o [1]
+  .bss               zero     0x2000'4874     0x4  isr.o [1]
+  .bss               zero     0x2000'4878     0x4  isr.o [1]
+  .bss               zero     0x2000'487c     0x4  isr.o [1]
+  .bss               zero     0x2000'4880     0x4  main.o [1]
+  .bss               zero     0x2000'4884     0x4  main.o [1]
+  .bss               zero     0x2000'4888     0x4  motor.o [1]
+  .bss               zero     0x2000'488c     0x4  parameter.o [1]
+  .bss               zero     0x2000'4890     0x4  parameter.o [1]
+  .bss               zero     0x2000'4894     0x4  parameter.o [1]
+  .bss               zero     0x2000'4898     0x4  parameter.o [1]
+  .bss               zero     0x2000'489c     0x4  parameter.o [1]
+  .bss               zero     0x2000'48a0     0x4  parameter.o [1]
+  .bss               zero     0x2000'48a4     0x4  parameter.o [1]
+  .bss               zero     0x2000'48a8     0x4  show_page.o [1]
+  .bss               zero     0x2000'48ac     0x4  show_page.o [1]
+  .bss               zero     0x2000'48b0     0x4  show_page.o [1]
+  .bss               zero     0x2000'48b4     0x4  show_page.o [1]
+  .bss               zero     0x2000'48b8     0x4  show_page.o [1]
+  .bss               zero     0x2000'48bc     0x4  Vofa.o [1]
+  .bss               zero     0x2000'48c0     0x4  zf_common_interrupt.o [1]
+  .bss               zero     0x2000'48c4     0x4  zf_device_type.o [1]
+  .bss               zero     0x2000'48c8     0x4  zf_driver_adc.o [1]
+  .bss               zero     0x2000'48cc     0x4  xfail_s.o [2]
+  .bss               zero     0x2000'48d0     0x2  gps.o [1]
+  .bss               zero     0x2000'48d2     0x2  gps.o [1]
+  .bss               zero     0x2000'48d4     0x2  gps.o [1]
+  .bss               zero     0x2000'48d6     0x2  gps.o [1]
+  .bss               zero     0x2000'48d8     0x2  gps.o [1]
+  .bss               zero     0x2000'48da     0x2  gps.o [1]
+  .bss               zero     0x2000'48dc     0x2  gps.o [1]
+  .bss               zero     0x2000'48de     0x2  gps.o [1]
+  .bss               zero     0x2000'48e0     0x2  gps.o [1]
+  .bss               zero     0x2000'48e2     0x2  isr.o [1]
+  .bss               zero     0x2000'48e4     0x2  main.o [1]
+  .bss               zero     0x2000'48e6     0x2  parameter.o [1]
+  .bss               zero     0x2000'48e8     0x2  parameter.o [1]
+  .bss               zero     0x2000'48ea     0x2  show_page.o [1]
+  .bss               zero     0x2000'48ec     0x2  show_page.o [1]
+  .bss               zero     0x2000'48ee     0x1  button.o [1]
+  .bss               zero     0x2000'48ef     0x1  gps.o [1]
+  .bss               zero     0x2000'48f0     0x1  gps.o [1]
+  .bss               zero     0x2000'48f1     0x1  gps.o [1]
+  .bss               zero     0x2000'48f2     0x1  isr.o [1]
+  .bss               zero     0x2000'48f3     0x1  isr.o [1]
+  .bss               zero     0x2000'48f4     0x1  isr.o [1]
+  .bss               zero     0x2000'48f5     0x1  isr.o [1]
+  .bss               zero     0x2000'48f6     0x1  isr.o [1]
+  .bss               zero     0x2000'48f7     0x1  main.o [1]
+  .bss               zero     0x2000'48f8     0x1  main.o [1]
+  .bss               zero     0x2000'48f9     0x1  main.o [1]
+  .bss               zero     0x2000'48fa     0x1  route_generating.o [1]
+  .bss               zero     0x2000'48fb     0x1  show_page.o [1]
+  .bss               zero     0x2000'48fc     0x1  zf_common_debug.o [1]
+  .bss               zero     0x2000'48fd     0x1  zf_common_debug.o [1]
+  .bss               zero     0x2000'48fe     0x1  zf_device_bluetooth_ch9141.o [1]
+  .bss               zero     0x2000'48ff     0x1  zf_device_mt9v03x.o [1]
+  .bss               zero     0x2000'4900     0x1  zf_device_ov7725.o [1]
+  .bss               zero     0x2000'4901     0x1  zf_device_scc8660.o [1]
+  .bss               zero     0x2000'4902     0x1  zf_device_tsl1401.o [1]
+  .bss               zero     0x2000'4903     0x1  zf_device_tsl1401.o [1]
+  .bss               zero     0x2000'4904     0x1  zf_device_type.o [1]
+  .bss               zero     0x2000'4905     0x1  zf_device_type.o [1]
+  .bss               zero     0x2000'4906     0x1  zf_device_type.o [1]
+  .bss               zero     0x2000'4907     0x1  zf_device_type.o [1]
+  .bss               zero     0x2000'4908     0x1  zf_device_wireless_uart.o [1]
+                            - 0x2000'4909  0x4471
+
+"P2", part 3 of 3:                         0x2000
+  CSTACK                      0x2000'4910  0x2000  <Block>
+    CSTACK           uninit   0x2000'4910  0x2000  <Block tail>
+                            - 0x2000'6910  0x2000
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'b5b3   0x807'ffff  0x7'4a4d
+  0x2000'0497  0x2000'0497       0x1
+  0x2000'490c  0x2000'490f       0x4
+  0x2000'6910  0x2001'ffff  0x1'96f0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x4471:
+          0x2000'0498  0x4471
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x233 (47% of destination):
+           0x800'b380   0x233
+    1 destination range, total size 0x497:
+          0x2000'0000   0x497
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                        ro code  ro data  rw data
+    ------                        -------  -------  -------
+command line/config:
+    -------------------------------------------------------
+    Total:
+
+D:\极速越野\旧版程序\7.17 有刷 薇草修改\jisuyueye\iar\program\Debug\Obj: [1]
+    Vofa.o                            636                 4
+    button.o                        1 072                 1
+    encoder.o                         364        1        1
+    flash.o                         2 320      133      276
+    gps.o                           2 952       18   12 781
+    isr.o                           3 200               319
+    main.o                            344        2       33
+    motor.o                           708                 4
+    parameter.o                                 20      134
+    route_generating.o              7 256       24    3 697
+    show_page.o                     3 000      714      657
+    startup_mm32f3277g.o              418
+    system_mm32f3277g.o                16
+    zf_common_clock.o                 552        2        4
+    zf_common_debug.o                 780       88       23
+    zf_common_fifo.o                  176
+    zf_common_font.o                         1 520
+    zf_common_function.o               20
+    zf_common_interrupt.o             274                 4
+    zf_device_bluetooth_ch9141.o       32                21
+    zf_device_gps_tau1201.o           460      160
+    zf_device_mt9v03x.o                                   1
+    zf_device_ov7725.o                                    1
+    zf_device_scc8660.o                                   1
+    zf_device_tft180.o              2 116       88        7
+    zf_device_tsl1401.o               188               514
+    zf_device_type.o                  440                 8
+    zf_device_wireless_uart.o          76                21
+    zf_driver_adc.o                   140        6       16
+    zf_driver_delay.o                  84
+    zf_driver_dma.o                   184        4        8
+    zf_driver_encoder.o               796      147        8
+    zf_driver_flash.o                 496
+    zf_driver_gpio.o                  800       16       32
+    zf_driver_pit.o                   280      148
+    zf_driver_pwm.o                   696       80
+    zf_driver_spi.o                   864        6       12
+    zf_driver_timer.o                 208                 8
+    zf_driver_uart.o                  788       19       40
+    -------------------------------------------------------
+    Total:                         32 736    3 196   18 636
+
+dl7M_tlf.a: [2]
+    abort.o                             6
+    exit.o                              4
+    low_level_init.o                    4
+    sprintf.o                          64
+    strstr.o                           48
+    xfail_s.o                          64                 4
+    xlocale_c.o                         8       31       56
+    xprintflarge_nomb.o             3 094
+    xsprout.o                          10
+    -------------------------------------------------------
+    Total:                          3 302       31       60
+
+m7M_tl.a: [3]
+    DblAdd.o                          378
+    DblCmpEq.o                         32
+    DblCmpGe.o                         46
+    DblCmpLe.o                         46
+    DblDiv.o                          582
+    DblMul.o                          418
+    DblSub.o                          226
+    DblToFlt.o                        104
+    DblToS32.o                         58
+    DblToU32.o                         40
+    FltAdd.o                          226
+    FltCmpGe.o                         36
+    FltCmpLe.o                         36
+    FltDiv.o                          252
+    FltMul.o                          216
+    FltSub.o                          128
+    FltToDbl.o                         72
+    FltToS32.o                         42
+    FltToU32.o                         34
+    S32ToDbl.o                         34
+    S32ToFlt.o                         36
+    U32ToDbl.o                         26
+    U32ToFlt.o                         28
+    atan2_64.o                        266
+    cos_sin64.o                     1 056
+    fmod.o                            424
+    frexp.o                           112
+    iar_Atan64.o                      528       64
+    sqrt.o                            242
+    -------------------------------------------------------
+    Total:                          5 724       64
+
+rt7M_tl.a: [4]
+    ABImemclr4.o                        6
+    ABImemcpy.o                       166
+    ABImemset.o                       102
+    ABImemset48.o                      50
+    I64DivMod.o                       560
+    I64DivZer.o                         2
+    cexit.o                            10
+    cmain.o                            30
+    cstartup_M.o                       12
+    data_init.o                        40
+    lz77_init_single.o                122
+    memchr.o                           88
+    strchr.o                           22
+    strcmp.o                           18
+    strcpy.o                           24
+    strlen.o                           54
+    zero_init3.o                       58
+    -------------------------------------------------------
+    Total:                          1 364
+
+shb_l.a: [5]
+    exit.o                             20
+    -------------------------------------------------------
+    Total:                             20
+
+    Gaps                               44        2
+    Linker created                              32    8 192
+-----------------------------------------------------------
+    Grand Total:                   43 190    3 325   26 888
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address    Size  Type      Object
+-----                       -------    ----  ----      ------
+.iar.init_table$$Base    0x800'b048           --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'b068           --   Gb  - Linker created -
+?main                    0x800'b089          Code  Gb  cmain.o [4]
+Button_Control           0x800'9e23    0x7a  Code  Gb  button.o [1]
+Button_get               0x800'9ceb    0xc8  Code  Gb  button.o [1]
+CSTACK$$Base            0x2000'4910           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'6910           --   Gb  - Linker created -
+CarCtrlOrder            0x2000'47d4    0x14  Data  Gb  isr.o [1]
+CarCtrlTemp             0x2000'47e8    0x14  Data  Gb  isr.o [1]
+DMA1_Channel1_IRQHandler
+                         0x800'7bc7    0x14  Code  Gb  isr.o [1]
+DMA1_Channel2_IRQHandler
+                         0x800'7bdb    0x14  Code  Gb  isr.o [1]
+DMA1_Channel3_IRQHandler
+                         0x800'7bef    0x14  Code  Gb  isr.o [1]
+DMA1_Channel4_IRQHandler
+                         0x800'7c03    0x1a  Code  Gb  isr.o [1]
+DMA1_Channel5_IRQHandler
+                         0x800'7c1d    0x14  Code  Gb  isr.o [1]
+DMA1_Channel6_IRQHandler
+                         0x800'7c31    0x14  Code  Gb  isr.o [1]
+DMA1_Channel7_IRQHandler
+                         0x800'7c4d    0x14  Code  Gb  isr.o [1]
+DMA2_Channel1_IRQHandler
+                         0x800'7c61    0x14  Code  Gb  isr.o [1]
+DMA2_Channel2_IRQHandler
+                         0x800'7c75    0x14  Code  Gb  isr.o [1]
+DMA2_Channel3_IRQHandler
+                         0x800'7c89    0x14  Code  Gb  isr.o [1]
+DMA2_Channel4_IRQHandler
+                         0x800'7ca1    0x14  Code  Gb  isr.o [1]
+DMA2_Channel5_IRQHandler
+                         0x800'7cc1    0x14  Code  Gb  isr.o [1]
+Data2Var                 0x800'3e35    0x32  Code  Gb  flash.o [1]
+Data_Gyro               0x2000'47b8    0x1c  Data  Gb  parameter.o [1]
+EXTI0_IRQHandler         0x800'7ae3     0xc  Code  Gb  isr.o [1]
+EXTI15_10_IRQHandler     0x800'7b6f    0x58  Code  Gb  isr.o [1]
+EXTI1_IRQHandler         0x800'7aef     0xc  Code  Gb  isr.o [1]
+EXTI2_IRQHandler         0x800'7afb     0xc  Code  Gb  isr.o [1]
+EXTI3_IRQHandler         0x800'7b07     0xc  Code  Gb  isr.o [1]
+EXTI4_IRQHandler         0x800'7b13     0xc  Code  Gb  isr.o [1]
+EXTI9_5_IRQHandler       0x800'7b1f    0x50  Code  Gb  isr.o [1]
+FLASH_VARS              0x2000'0038   0x114  Data  Lc  flash.o [1]
+FLASH_WRITE_FLAG        0x2000'48f9     0x1  Data  Gb  main.o [1]
+FLOAT_SCALE_TABLE       0x2000'0000    0x38  Data  Lc  show_page.o [1]
+FlashReadMicro           0x800'4343    0x60  Code  Gb  flash.o [1]
+FlashReadParam           0x800'3eb1    0x42  Code  Gb  flash.o [1]
+FlashReadParams          0x800'46f5    0x14  Code  Gb  flash.o [1]
+FlashReadPoints          0x800'43a3   0x352  Code  Gb  flash.o [1]
+FlashWhitePoints         0x800'3f35   0x3ae  Code  Gb  flash.o [1]
+FlashWriteMicro          0x800'42e3    0x60  Code  Gb  flash.o [1]
+FlashWriteParam          0x800'3ef3    0x42  Code  Gb  flash.o [1]
+FlashWriteParams         0x800'4709    0x1c  Code  Gb  flash.o [1]
+Flash_Control            0x800'9e9d    0x78  Code  Gb  button.o [1]
+Flash_Control::flash_flag
+                        0x2000'48ee     0x1  Data  Lc  button.o [1]
+Float_to_Byte            0x800'a52d    0x18  Code  Gb  Vofa.o [1]
+GPSBearingAngle          0x800'2761   0x100  Code  Gb  gps.o [1]
+GPSDistance              0x800'260f   0x14e  Code  Gb  gps.o [1]
+Get_InitData             0x800'2425   0x17a  Code  Gb  gps.o [1]
+GpsAngleError            0x800'2861    0x8c  Code  Gb  gps.o [1]
+GpsDotSelection          0x800'28ed    0xd8  Code  Gb  gps.o [1]
+GpsDotSelection::change_time
+                        0x2000'4868     0x4  Data  Lc  gps.o [1]
+GpsDotSelection::last_change
+                        0x2000'486c     0x4  Data  Lc  gps.o [1]
+INT16_SCALE_TABLE       0x2000'0194    0x10  Data  Lc  show_page.o [1]
+INT32_SCALE_TABLE       0x2000'01a4    0x1c  Data  Lc  show_page.o [1]
+LoadInt                  0x800'6381    0x7a  Code  Lc  xprintflarge_nomb.o [2]
+Points_Stored           0x2000'1cb8  0x17c0  Data  Gb  gps.o [1]
+Points_Use              0x2000'0498  0x1820  Data  Gb  gps.o [1]
+ReadBuff                0x2000'4488   0x100  Data  Gb  isr.o [1]
+Region$$Table$$Base      0x800'b048           --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'b068           --   Gb  - Linker created -
+Save_Data               0x2000'4588    0xf8  Data  Gb  gps.o [1]
+StartTime               0x2000'014c     0xc  Data  Gb  gps.o [1]
+SystemInit               0x800'b109    0x10  Code  Gb  system_mm32f3277g.o [1]
+TIM1_UP_IRQHandler       0x800'717d    0x10  Code  Gb  isr.o [1]
+TIM2_IRQHandler          0x800'718d    0x10  Code  Gb  isr.o [1]
+TIM3_IRQHandler          0x800'719d    0x10  Code  Gb  isr.o [1]
+TIM4_IRQHandler          0x800'71ad    0x10  Code  Gb  isr.o [1]
+TIM5_IRQHandler          0x800'71bd   0x6f4  Code  Gb  isr.o [1]
+TIM6_IRQHandler          0x800'78b1    0x10  Code  Gb  isr.o [1]
+TIM7_IRQHandler          0x800'78c1    0x10  Code  Gb  isr.o [1]
+TIM8_UP_IRQHandler       0x800'78d1    0x16  Code  Gb  isr.o [1]
+Trans_Data_Z_plus_X      0x800'259f    0x4c  Code  Gb  gps.o [1]
+UART1_IRQHandler         0x800'78e7    0x2a  Code  Gb  isr.o [1]
+UART2_IRQHandler         0x800'7911    0x8a  Code  Gb  isr.o [1]
+UART2_IRQHandler::num   0x2000'4878     0x4  Data  Lc  isr.o [1]
+UART3_IRQHandler         0x800'799b    0x72  Code  Gb  isr.o [1]
+UART3_IRQHandler::i     0x2000'487c     0x4  Data  Lc  isr.o [1]
+UART4_IRQHandler         0x800'7a0d    0x2a  Code  Gb  isr.o [1]
+UART5_IRQHandler         0x800'7a37    0x2a  Code  Gb  isr.o [1]
+UART6_IRQHandler         0x800'7a61    0x30  Code  Gb  isr.o [1]
+UART7_IRQHandler         0x800'7a91    0x28  Code  Gb  isr.o [1]
+UART8_IRQHandler         0x800'7ab9    0x2a  Code  Gb  isr.o [1]
+Use_Data                0x2000'46e0    0x58  Data  Gb  gps.o [1]
+Var2Data                 0x800'3e67    0x4a  Code  Gb  flash.o [1]
+VarOP                    0x800'8f55    0xd6  Code  Gb  show_page.o [1]
+Vofa_1data               0x800'a545    0x2a  Code  Gb  Vofa.o [1]
+Vofa_2data               0x800'a56f    0x50  Code  Gb  Vofa.o [1]
+Vofa_5data               0x800'a5bf    0xdc  Code  Gb  Vofa.o [1]
+_GenldLargeNoMb          0x800'6b11   0x24c  Code  Lc  xprintflarge_nomb.o [2]
+_LdtobLargeNoMb          0x800'68b7   0x232  Code  Lc  xprintflarge_nomb.o [2]
+_LitobLargeNoMb          0x800'6767   0x10a  Code  Lc  xprintflarge_nomb.o [2]
+_Locale_lconv           0x2000'0444    0x38  Data  Lc  xlocale_c.o [2]
+_PrintfLargeNoMb         0x800'61dd   0x19e  Code  Gb  xprintflarge_nomb.o [2]
+_PutcharsLargeNoMb       0x800'6d5d    0x2e  Code  Lc  xprintflarge_nomb.o [2]
+_PutfldLargeNoMb         0x800'63fb   0x260  Code  Lc  xprintflarge_nomb.o [2]
+_PuttxtLargeNoMb         0x800'665b   0x10c  Code  Lc  xprintflarge_nomb.o [2]
+_SProut                  0x800'2c4b     0xa  Code  Gb  xsprout.o [2]
+__NVIC_DisableIRQ        0x800'6087    0x26  Code  Lc  zf_common_interrupt.o [1]
+__NVIC_EnableIRQ         0x800'6069    0x1e  Code  Lc  zf_common_interrupt.o [1]
+__NVIC_SetPriority       0x800'60ad    0x2c  Code  Lc  zf_common_interrupt.o [1]
+__NVIC_SetPriorityGrouping
+                         0x800'6049    0x1e  Code  Lc  zf_common_interrupt.o [1]
+__Vectors                0x800'0000           --   Gb  startup_mm32f3277g.o [1]
+__Vectors_End            0x800'0190          Data  Gb  startup_mm32f3277g.o [1]
+__Vectors_Size {Abs}          0x190           --   Gb  startup_mm32f3277g.o [1]
+__aeabi_cdcmpeq          0x800'32b1          Code  Gb  DblCmpEq.o [3]
+__aeabi_cdcmple          0x800'31cd          Code  Gb  DblCmpLe.o [3]
+__aeabi_cdrcmple         0x800'31fd          Code  Gb  DblCmpGe.o [3]
+__aeabi_cfcmple          0x800'827d          Code  Gb  FltCmpLe.o [3]
+__aeabi_cfrcmple         0x800'7f69          Code  Gb  FltCmpGe.o [3]
+__aeabi_d2f              0x800'322d          Code  Gb  DblToFlt.o [3]
+__aeabi_d2iz             0x800'3089          Code  Gb  DblToS32.o [3]
+__aeabi_d2uiz            0x800'712d          Code  Gb  DblToU32.o [3]
+__aeabi_dadd             0x800'2ad1          Code  Gb  DblAdd.o [3]
+__aeabi_ddiv             0x800'2c55          Code  Gb  DblDiv.o [3]
+__aeabi_dmul             0x800'2ee5          Code  Gb  DblMul.o [3]
+__aeabi_dsub             0x800'30e9          Code  Gb  DblSub.o [3]
+__aeabi_f2d              0x800'2e9d          Code  Gb  FltToDbl.o [3]
+__aeabi_f2iz             0x800'5709          Code  Gb  FltToS32.o [3]
+__aeabi_f2uiz            0x800'8ae9          Code  Gb  FltToU32.o [3]
+__aeabi_fadd             0x800'5949          Code  Gb  FltAdd.o [3]
+__aeabi_fdiv             0x800'8b29          Code  Gb  FltDiv.o [3]
+__aeabi_fmul             0x800'5631          Code  Gb  FltMul.o [3]
+__aeabi_fsub             0x800'615d          Code  Gb  FltSub.o [3]
+__aeabi_i2d              0x800'30c5          Code  Gb  S32ToDbl.o [3]
+__aeabi_i2f              0x800'5925          Code  Gb  S32ToFlt.o [3]
+__aeabi_ldiv0            0x800'7165          Code  Gb  I64DivZer.o [4]
+__aeabi_memclr4          0x800'1de9          Code  Gb  ABImemclr4.o [4]
+__aeabi_memcpy           0x800'1e69          Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4          0x800'1e89          Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8          0x800'1e89          Code  Gb  ABImemcpy.o [4]
+__aeabi_memset           0x800'5fe1          Code  Gb  ABImemset.o [4]
+__aeabi_ui2d             0x800'3295          Code  Gb  U32ToDbl.o [3]
+__aeabi_ui2f             0x800'8b0d          Code  Gb  U32ToFlt.o [3]
+__aeabi_uldivmod         0x800'6e8d          Code  Gb  I64DivMod.o [4]
+__cmain                  0x800'b089          Code  Gb  cmain.o [4]
+__exit                   0x800'7169    0x14  Code  Gb  exit.o [5]
+__iar_Atan64             0x800'5a45   0x210  Code  Gb  iar_Atan64.o [3]
+__iar_Fail_s             0x800'6df5    0x1c  Code  Gb  xfail_s.o [2]
+__iar_Memchr             0x800'6e35          Code  Gb  memchr.o [4]
+__iar_Memset             0x800'5fe1          Code  Gb  ABImemset.o [4]
+__iar_Memset4_word       0x800'4745          Code  Gb  ABImemset48.o [4]
+__iar_Memset8_word       0x800'4745          Code  Gb  ABImemset48.o [4]
+__iar_Memset_word        0x800'5fe9          Code  Gb  ABImemset.o [4]
+__iar_Sin64              0x800'47a9   0x38c  Code  Lc  cos_sin64.o [3]
+__iar_Strchr             0x800'5a2d          Code  Gb  strchr.o [4]
+__iar_atan2_64           0x800'4cbd    0xfe  Code  Gb  atan2_64.o [3]
+__iar_cos64              0x800'4bc1     0x4  Code  Gb  cos_sin64.o [3]
+__iar_cos_medium         0x800'4bc1     0x4  Code  Gb  cos_sin64.o [3]
+__iar_cos_medium64       0x800'4bc1     0x4  Code  Gb  cos_sin64.o [3]
+__iar_cos_mediuml        0x800'4bc1     0x4  Code  Gb  cos_sin64.o [3]
+__iar_dadd               0x800'30f9          Code  Gb  DblSub.o [3]
+__iar_data_init3         0x800'b021    0x28  Code  Gb  data_init.o [4]
+__iar_dsub               0x800'2ae1          Code  Gb  DblAdd.o [3]
+__iar_dsubStart          0x800'2af3          Code  Gb  DblAdd.o [3]
+__iar_fadd               0x800'6169          Code  Gb  FltSub.o [3]
+__iar_fmod64             0x800'4dc9          Code  Gb  fmod.o [3]
+__iar_frexp              0x800'70c9          Code  Gb  frexp.o [3]
+__iar_frexp64            0x800'70bd          Code  Gb  frexp.o [3]
+__iar_frexpl             0x800'70c9          Code  Gb  frexp.o [3]
+__iar_fsub               0x800'5955          Code  Gb  FltAdd.o [3]
+__iar_fsubStart          0x800'5965          Code  Gb  FltAdd.o [3]
+__iar_lz77_init_single3
+                         0x800'1def    0x7a  Code  Gb  lz77_init_single.o [4]
+__iar_program_start      0x800'b2e1          Code  Gb  cstartup_M.o [4]
+__iar_sin64              0x800'4bc5     0x4  Code  Gb  cos_sin64.o [3]
+__iar_sin_medium         0x800'4bc5     0x4  Code  Gb  cos_sin64.o [3]
+__iar_sin_medium64       0x800'4bc5     0x4  Code  Gb  cos_sin64.o [3]
+__iar_sin_mediuml        0x800'4bc5     0x4  Code  Gb  cos_sin64.o [3]
+__iar_sqrt64             0x800'4bc9          Code  Gb  sqrt.o [3]
+__iar_zero_init3         0x800'1f0f    0x3a  Code  Gb  zero_init3.o [4]
+__low_level_init         0x800'b0a7     0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000          Data  Gb  startup_mm32f3277g.o [1]
+__vector_table_0x1c      0x800'001c          Data  Gb  startup_mm32f3277g.o [1]
+_call_main               0x800'b095          Code  Gb  cmain.o [4]
+_exit                    0x800'b0b1          Code  Gb  cexit.o [4]
+_main                    0x800'b0a3          Code  Gb  cmain.o [4]
+a                        0x800'afe0    0x40  Data  Lc  iar_Atan64.o [3]
+abort                    0x800'715d     0x6  Code  Gb  abort.o [2]
+adc_convert              0x800'8cf5    0x82  Code  Gb  zf_driver_adc.o [1]
+adc_index               0x2000'03d4     0xc  Data  Lc  zf_driver_adc.o [1]
+adc_resolution          0x2000'48c8     0x4  Data  Lc  zf_driver_adc.o [1]
+afio_init                0x800'3ceb   0x140  Code  Gb  zf_driver_gpio.o [1]
+analysis_error          0x2000'48f1     0x1  Data  Gb  gps.o [1]
+analysis_finished       0x2000'48f4     0x1  Data  Gb  isr.o [1]
+area_tag                0x2000'48d2     0x2  Data  Gb  gps.o [1]
+atan2                    0x800'4cbd    0xfe  Code  Gb  atan2_64.o [3]
+atan2l                   0x800'4cbd    0xfe  Code  Gb  atan2_64.o [3]
+bluetooth_ch9141_data   0x2000'48fe     0x1  Data  Lc  zf_device_bluetooth_ch9141.o [1]
+bluetooth_ch9141_fifo   0x2000'4810    0x14  Data  Lc  zf_device_bluetooth_ch9141.o [1]
+bluetooth_ch9141_uart_callback
+                         0x800'8e85    0x18  Code  Gb  zf_device_bluetooth_ch9141.o [1]
+buf                     0x2000'48f5     0x1  Data  Gb  isr.o [1]
+buf2                    0x2000'48f6     0x1  Data  Gb  isr.o [1]
+button_init              0x800'9db3    0x70  Code  Gb  button.o [1]
+button_mod              0x2000'0484     0x2  Data  Gb  parameter.o [1]
+camera_dma_handler       0x800'8745    0x46  Code  Gb  zf_device_type.o [1]
+camera_type             0x2000'4904     0x1  Data  Gb  zf_device_type.o [1]
+camera_uart_handler      0x800'8615    0x8a  Code  Gb  zf_device_type.o [1]
+camera_vsync_handler     0x800'869f    0xa6  Code  Gb  zf_device_type.o [1]
+car_mode                0x2000'48e8     0x2  Data  Gb  parameter.o [1]
+change_motor             0x800'7fc9    0x4a  Code  Gb  motor.o [1]
+change_point            0x2000'48ef     0x1  Data  Gb  gps.o [1]
+clock_init               0x800'a96f    0x18  Code  Gb  zf_common_clock.o [1]
+clock_reset              0x800'a7a9    0x5c  Code  Lc  zf_common_clock.o [1]
+clock_set_freq           0x800'a805   0x16a  Code  Lc  zf_common_clock.o [1]
+collection_by_hand       0x800'1c01   0x19a  Code  Gb  route_generating.o [1]
+collection_by_hand::collect_flag
+                        0x2000'48fa     0x1  Data  Lc  route_generating.o [1]
+cos                      0x800'4bc1     0x4  Code  Gb  cos_sin64.o [3]
+cosl                     0x800'4bc1     0x4  Code  Gb  cos_sin64.o [3]
+curpage                 0x2000'0190     0x4  Data  Gb  show_page.o [1]
+current                 0x2000'48a8     0x4  Data  Gb  show_page.o [1]
+debug_assert_handler     0x800'54ff    0x3e  Code  Gb  zf_common_debug.o [1]
+debug_assert_handler::assert_nest_index
+                        0x2000'48fd     0x1  Data  Lc  zf_common_debug.o [1]
+debug_delay              0x800'52d1    0x38  Code  Lc  zf_common_debug.o [1]
+debug_flag              0x2000'48e6     0x2  Data  Gb  parameter.o [1]
+debug_init               0x800'5587    0x2a  Code  Gb  zf_common_debug.o [1]
+debug_output             0x800'5317   0x1e8  Code  Lc  zf_common_debug.o [1]
+debug_output_info       0x2000'47fc    0x14  Data  Lc  zf_common_debug.o [1]
+debug_output_init        0x800'555d    0x2a  Code  Gb  zf_common_debug.o [1]
+debug_output_struct_init
+                         0x800'553d    0x20  Code  Gb  zf_common_debug.o [1]
+debug_uart_str_output    0x800'5309     0xe  Code  Lc  zf_common_debug.o [1]
+delay                    0x800'9cc9    0x22  Code  Gb  button.o [1]
+delta_heading_angle      0x800'29c5    0x6c  Code  Gb  gps.o [1]
+direct_thres            0x2000'0164     0x4  Data  Gb  gps.o [1]
+distance_each_point_direct
+                        0x2000'015c     0x4  Data  Gb  gps.o [1]
+distance_each_point_round
+                        0x2000'0160     0x4  Data  Gb  gps.o [1]
+distance_from_lastpoint
+                        0x2000'0158     0x4  Data  Gb  gps.o [1]
+dma_disable              0x800'8def    0x44  Code  Gb  zf_driver_dma.o [1]
+dma_enable               0x800'8dab    0x44  Code  Gb  zf_driver_dma.o [1]
+dma_index               0x2000'03e0     0x8  Data  Lc  zf_driver_dma.o [1]
+dma_set_count            0x800'8d81    0x2a  Code  Gb  zf_driver_dma.o [1]
+dot_read                0x2000'48f3     0x1  Data  Gb  isr.o [1]
+duoji                   0x2000'018c     0x4  Data  Gb  parameter.o [1]
+duty_mid                0x2000'488c     0x4  Data  Gb  parameter.o [1]
+encoder_Q               0x2000'4798    0x20  Data  Gb  parameter.o [1]
+encoder_clear_count      0x800'8979    0x68  Code  Gb  zf_driver_encoder.o [1]
+encoder_dir_pin         0x2000'03e8     0x8  Data  Lc  zf_driver_encoder.o [1]
+encoder_get_count        0x800'87cd   0x1ac  Code  Gb  zf_driver_encoder.o [1]
+encoder_init             0x800'7dfd    0x12  Code  Gb  encoder.o [1]
+encoder_init_dir         0x800'89e1    0xba  Code  Gb  zf_driver_encoder.o [1]
+end_vofa                 0x800'a69b    0x24  Code  Gb  Vofa.o [1]
+error_direction         0x2000'4854     0x4  Data  Gb  gps.o [1]
+error_icm_last          0x2000'4860     0x4  Data  Gb  gps.o [1]
+error_lenth_s_p         0x2000'4850     0x4  Data  Gb  gps.o [1]
+exit                     0x800'b0ab     0x4  Code  Gb  exit.o [2]
+f_to_uint_lati          0x2000'48ac     0x4  Data  Gb  show_page.o [1]
+f_to_uint_longi         0x2000'48b0     0x4  Data  Gb  show_page.o [1]
+fifo_head_offset         0x800'8ea5    0x1a  Code  Gb  zf_common_fifo.o [1]
+fifo_write_buffer        0x800'8ebf    0x96  Code  Gb  zf_common_fifo.o [1]
+finished_gpspoints      0x2000'48de     0x2  Data  Gb  gps.o [1]
+first_PI_input          0x2000'0492     0x1  Data  Gb  encoder.o [1]
+flash_check              0x800'5735    0x48  Code  Gb  zf_driver_flash.o [1]
+flash_erase_page         0x800'577d    0x8c  Code  Gb  zf_driver_flash.o [1]
+flash_read_page          0x800'5809    0x46  Code  Gb  zf_driver_flash.o [1]
+flash_write_page         0x800'584f    0xbc  Code  Gb  zf_driver_flash.o [1]
+fmod                     0x800'4dc9          Code  Gb  fmod.o [3]
+fmodl                    0x800'4dc9          Code  Gb  fmod.o [3]
+frexp                    0x800'70bd          Code  Gb  frexp.o [3]
+frexpl                   0x800'70bd          Code  Gb  frexp.o [3]
+g_car_speed             0x2000'48a4     0x4  Data  Gb  parameter.o [1]
+g_send                  0x2000'048c     0x2  Data  Gb  parameter.o [1]
+g_speed_set             0x2000'017c     0x4  Data  Gb  parameter.o [1]
+generate_direct_road     0x800'0c95   0x26a  Code  Gb  route_generating.o [1]
+generate_round_road      0x800'039f   0x8f6  Code  Gb  route_generating.o [1]
+generating_route         0x800'0207   0x198  Code  Gb  route_generating.o [1]
+generating_route_init    0x800'0191    0x76  Code  Gb  route_generating.o [1]
+get_cur_speed            0x800'7e0f   0x134  Code  Gb  encoder.o [1]
+get_greatest_common_divisor
+                         0x800'a9d1    0x14  Code  Gb  zf_common_function.o [1]
+gpio_get_level           0x800'3b15    0x24  Code  Gb  zf_driver_gpio.o [1]
+gpio_group              0x2000'03f0    0x20  Data  Gb  zf_driver_gpio.o [1]
+gpio_init                0x800'3b39   0x1b2  Code  Gb  zf_driver_gpio.o [1]
+gps_auto_plannation      0x800'111d   0x480  Code  Gb  route_generating.o [1]
+gps_error_pd_pwm        0x2000'489c     0x4  Data  Gb  parameter.o [1]
+gps_init                 0x800'a9e5   0x194  Code  Gb  zf_device_gps_tau1201.o [1]
+gps_kd_in               0x2000'4898     0x4  Data  Gb  parameter.o [1]
+gps_kd_w                0x2000'4894     0x4  Data  Gb  parameter.o [1]
+gps_kd_z                0x2000'4890     0x4  Data  Gb  parameter.o [1]
+gps_kp_in               0x2000'0178     0x4  Data  Gb  parameter.o [1]
+gps_kp_w                0x2000'0174     0x4  Data  Gb  parameter.o [1]
+gps_kp_z                0x2000'0170     0x4  Data  Gb  parameter.o [1]
+gps_mode                0x2000'48da     0x2  Data  Gb  gps.o [1]
+gps_servo_control        0x800'8041   0x1a2  Code  Gb  motor.o [1]
+gps_servo_control::last_duoji
+                        0x2000'4888     0x4  Data  Lc  motor.o [1]
+guess_start             0x2000'48d0     0x2  Data  Gb  gps.o [1]
+guiding_mode            0x2000'047c     0x2  Data  Gb  gps.o [1]
+interrupt_disable        0x800'612f     0xe  Code  Gb  zf_common_interrupt.o [1]
+interrupt_enable         0x800'6121     0xe  Code  Gb  zf_common_interrupt.o [1]
+interrupt_global_disable
+                         0x800'60f1    0x12  Code  Gb  zf_common_interrupt.o [1]
+interrupt_global_enable
+                         0x800'60d9    0x18  Code  Gb  zf_common_interrupt.o [1]
+interrupt_init           0x800'6151     0xa  Code  Gb  zf_common_interrupt.o [1]
+interrupt_nest_count    0x2000'48c0     0x4  Data  Lc  zf_common_interrupt.o [1]
+interrupt_set_priority   0x800'613d    0x14  Code  Gb  zf_common_interrupt.o [1]
+key_num                 0x2000'48e4     0x2  Data  Gb  main.o [1]
+kps_hust_est_plygrnd    0x2000'4680    0x60  Data  Gb  route_generating.o [1]
+last_micro_area         0x2000'48d6     0x2  Data  Gb  gps.o [1]
+localeconv               0x800'7155     0x4  Code  Gb  xlocale_c.o [2]
+main                     0x800'abb1   0x158  Code  Gb  main.o [1]
+memchr                   0x800'6e35          Code  Gb  memchr.o [4]
+micro_area              0x2000'48d4     0x2  Data  Gb  gps.o [1]
+micro_op_lati           0x2000'4738    0x30  Data  Gb  gps.o [1]
+micro_op_longi          0x2000'4768    0x30  Data  Gb  gps.o [1]
+micro_operating          0x800'15b1   0x2b8  Code  Gb  route_generating.o [1]
+micro_operating_recover
+                         0x800'1879   0x2d0  Code  Gb  route_generating.o [1]
+modify_flag             0x2000'48f7     0x1  Data  Gb  main.o [1]
+motor_init               0x800'7f8d    0x1c  Code  Gb  motor.o [1]
+move                     0x800'9b0d   0x1bc  Code  Gb  button.o [1]
+mt9v03x_finish_flag     0x2000'48ff     0x1  Data  Gb  zf_device_mt9v03x.o [1]
+my_lcd_showfloat         0x800'9253   0x176  Code  Gb  show_page.o [1]
+my_lcd_showint16         0x800'902b   0x10c  Code  Gb  show_page.o [1]
+my_lcd_showint32         0x800'9137   0x11c  Code  Gb  show_page.o [1]
+newgpsgot               0x2000'48f2     0x1  Data  Gb  isr.o [1]
+now_area                0x2000'48f0     0x1  Data  Gb  gps.o [1]
+op                      0x2000'48f8     0x1  Data  Gb  main.o [1]
+ov7725_finish_flag      0x2000'4900     0x1  Data  Gb  zf_device_ov7725.o [1]
+page_show_params         0x800'9481    0x62  Code  Gb  show_page.o [1]
+page_spin                0x800'94e3   0x52a  Code  Gb  show_page.o [1]
+page_spin::change       0x2000'48b4     0x4  Data  Lc  show_page.o [1]
+page_spin::new_page     0x2000'48b8     0x4  Data  Lc  show_page.o [1]
+page_spin{4}{5}{6}{7}{10}::vars
+                        0x2000'0208    0x48  Data  Lc  show_page.o [1]
+page_spin{4}{5}{6}{7}{11}::vars
+                        0x2000'0250    0x3c  Data  Lc  show_page.o [1]
+page_spin{4}{5}{6}{7}{12}::vars
+                        0x2000'028c    0x48  Data  Lc  show_page.o [1]
+page_spin{4}{5}{6}{7}{13}::vars
+                        0x2000'02d4    0x48  Data  Lc  show_page.o [1]
+page_spin{4}{5}{6}{7}{14}::vars
+                        0x2000'031c    0x24  Data  Lc  show_page.o [1]
+page_spin{4}{5}{6}{7}{15}::vars
+                        0x2000'0340    0x48  Data  Lc  show_page.o [1]
+page_spin{4}{5}{6}{7}{16}::vars
+                        0x2000'0388    0x48  Data  Lc  show_page.o [1]
+page_spin{4}{5}{6}{7}{9}::vars
+                        0x2000'01c0    0x48  Data  Lc  show_page.o [1]
+page_text_param          0x800'93c9    0xb8  Code  Gb  show_page.o [1]
+parseGpsBuffer           0x800'1f49   0x1b2  Code  Gb  gps.o [1]
+passed_sections         0x2000'48d8     0x2  Data  Gb  gps.o [1]
+past_page               0x2000'48fb     0x1  Data  Gb  show_page.o [1]
+pit_init                 0x800'ad09    0xea  Code  Gb  zf_driver_pit.o [1]
+point_latitude_selected
+                        0x2000'4858     0x4  Data  Gb  gps.o [1]
+point_longitude_selected
+                        0x2000'485c     0x4  Data  Gb  gps.o [1]
+point_selected_gps      0x2000'48dc     0x2  Data  Gb  gps.o [1]
+point_type_pageread     0x2000'48e0     0x2  Data  Gb  gps.o [1]
+pulse_read              0x2000'48a0     0x4  Data  Gb  parameter.o [1]
+pwm_init                 0x800'8371   0x1c2  Code  Gb  zf_driver_pwm.o [1]
+pwm_max_angle           0x2000'0486     0x2  Data  Gb  parameter.o [1]
+pwm_mid_angle           0x2000'048a     0x2  Data  Gb  parameter.o [1]
+pwm_min_angle           0x2000'0488     0x2  Data  Gb  parameter.o [1]
+pwm_set_duty             0x800'82a1    0xd0  Code  Gb  zf_driver_pwm.o [1]
+radians                  0x800'25eb    0x14  Code  Gb  gps.o [1]
+receive                 0x2000'48c4     0x4  Data  Gb  zf_device_type.o [1]
+receive_num             0x2000'4906     0x1  Data  Gb  zf_device_type.o [1]
+round_in_out             0x800'1b49    0xa8  Code  Gb  route_generating.o [1]
+route_read              0x2000'0168     0x4  Data  Gb  gps.o [1]
+route_write             0x2000'4864     0x4  Data  Gb  gps.o [1]
+rps_hust_est_plygrnd    0x2000'3478   0xe10  Data  Gb  route_generating.o [1]
+run_sections            0x2000'047e     0x2  Data  Gb  gps.o [1]
+scale                    0x800'6871    0x46  Code  Lc  xprintflarge_nomb.o [2]
+scc8660_finish_flag     0x2000'4901     0x1  Data  Gb  zf_device_scc8660.o [1]
+sec_hand                0x2000'48cc     0x4  Data  Lc  xfail_s.o [2]
+seekfree_wireless_init   0x800'8e51    0x2a  Code  Gb  zf_device_wireless_uart.o [1]
+send_order              0x2000'4874     0x4  Data  Gb  isr.o [1]
+send_spin_vofa           0x800'a6bf    0xd0  Code  Gb  Vofa.o [1]
+send_spin_vofa{1}{3}{4}{5}::i
+                        0x2000'48bc     0x4  Data  Lc  Vofa.o [1]
+servo_motor_init         0x800'7fa9    0x20  Code  Gb  motor.o [1]
+setspeed_to_pwm          0x800'8013    0x2e  Code  Gb  motor.o [1]
+sin                      0x800'4bc5     0x4  Code  Gb  cos_sin64.o [3]
+sinl                     0x800'4bc5     0x4  Code  Gb  cos_sin64.o [3]
+speed_max_region        0x2000'0180     0xc  Data  Gb  parameter.o [1]
+spi_index               0x2000'0410     0xc  Data  Lc  zf_driver_spi.o [1]
+spi_init                 0x800'505d   0x25e  Code  Gb  zf_driver_spi.o [1]
+spi_write_16bit          0x800'4fd5    0x84  Code  Gb  zf_driver_spi.o [1]
+spi_write_8bit           0x800'4f71    0x64  Code  Gb  zf_driver_spi.o [1]
+sprintf                  0x800'5fa1    0x40  Code  Gb  sprintf.o [2]
+sq                       0x800'25ff    0x10  Code  Gb  gps.o [1]
+sqrt                     0x800'4bc9          Code  Gb  sqrt.o [3]
+sqrtl                    0x800'4bc9          Code  Gb  sqrt.o [3]
+start_car               0x2000'4870     0x4  Data  Lc  isr.o [1]
+start_delay_time        0x2000'48e2     0x2  Data  Gb  isr.o [1]
+strchr                   0x800'5a2d          Code  Gb  strchr.o [4]
+strcmp                   0x800'8251          Code  Gb  strcmp.o [4]
+strcpy                   0x800'8265          Code  Gb  strcpy.o [4]
+strlen                   0x800'5f69          Code  Gb  strlen.o [4]
+strstr                   0x800'4777    0x30  Code  Gb  strstr.o [2]
+sum                     0x2000'4838    0x10  Data  Gb  main.o [1]
+system_clock            0x2000'03d0     0x4  Data  Gb  zf_common_clock.o [1]
+system_delay             0x800'55dd    0x54  Code  Gb  zf_driver_delay.o [1]
+tft180_bgcolor          0x2000'0490     0x2  Data  Lc  zf_device_tft180.o [1]
+tft180_clear             0x800'34cd    0x3a  Code  Gb  zf_device_tft180.o [1]
+tft180_debug_init        0x800'3485    0x46  Code  Lc  zf_device_tft180.o [1]
+tft180_display_dir      0x2000'0494     0x1  Data  Lc  zf_device_tft180.o [1]
+tft180_draw_point        0x800'3581    0x6c  Code  Gb  zf_device_tft180.o [1]
+tft180_full              0x800'3507    0x3a  Code  Gb  zf_device_tft180.o [1]
+tft180_init              0x800'3765   0x390  Code  Gb  zf_device_tft180.o [1]
+tft180_pencolor         0x2000'048e     0x2  Data  Lc  zf_device_tft180.o [1]
+tft180_set_color         0x800'3573     0xe  Code  Gb  zf_device_tft180.o [1]
+tft180_set_dir           0x800'3541    0x32  Code  Gb  zf_device_tft180.o [1]
+tft180_set_region        0x800'332d   0x158  Code  Lc  zf_device_tft180.o [1]
+tft180_show_char         0x800'35ed    0xd6  Code  Gb  zf_device_tft180.o [1]
+tft180_show_string       0x800'36c5    0x7e  Code  Gb  zf_device_tft180.o [1]
+tft180_write_index       0x800'32d1    0x5c  Code  Lc  zf_device_tft180.o [1]
+tft180_x_max            0x2000'0495     0x1  Data  Lc  zf_device_tft180.o [1]
+tft180_y_max            0x2000'0496     0x1  Data  Lc  zf_device_tft180.o [1]
+tft_ascii                0x800'9f3c   0x5f0  Data  Gb  zf_common_font.o [1]
+timer_clock_enable       0x800'8c55    0x92  Code  Gb  zf_driver_timer.o [1]
+timer_funciton_check     0x800'8c25    0x30  Code  Gb  zf_driver_timer.o [1]
+timer_function_state    0x2000'4848     0x8  Data  Lc  zf_driver_timer.o [1]
+total_time              0x2000'4880     0x4  Data  Gb  main.o [1]
+tp_micr_lati            0x2000'48ea     0x2  Data  Gb  show_page.o [1]
+tp_micr_longi           0x2000'48ec     0x2  Data  Gb  show_page.o [1]
+tsl1401_collect_pit_handler
+                         0x800'8559    0xaa  Code  Gb  zf_device_tsl1401.o [1]
+tsl1401_data            0x2000'4288   0x200  Data  Gb  zf_device_tsl1401.o [1]
+tsl1401_finish_flag     0x2000'4903     0x1  Data  Gb  zf_device_tsl1401.o [1]
+tsl1401_init_state      0x2000'4902     0x1  Data  Lc  zf_device_tsl1401.o [1]
+uart_index              0x2000'041c    0x20  Data  Lc  zf_driver_uart.o [1]
+uart_init                0x800'5d6b   0x1dc  Code  Gb  zf_driver_uart.o [1]
+uart_irq                0x2000'043c     0x8  Data  Lc  zf_driver_uart.o [1]
+uart_query_byte          0x800'5ce5    0x26  Code  Gb  zf_driver_uart.o [1]
+uart_read_byte           0x800'5cc9    0x1c  Code  Gb  zf_driver_uart.o [1]
+uart_receive_flag       0x2000'4907     0x1  Data  Gb  zf_device_type.o [1]
+uart_rx_interrupt        0x800'5d0b    0x60  Code  Gb  zf_driver_uart.o [1]
+uart_write_buffer        0x800'5c7b    0x2c  Code  Gb  zf_driver_uart.o [1]
+uart_write_byte          0x800'5c55    0x26  Code  Gb  zf_driver_uart.o [1]
+uart_write_string        0x800'5ca7    0x22  Code  Gb  zf_driver_uart.o [1]
+whether_delay           0x2000'016c     0x4  Data  Gb  gps.o [1]
+wireless_module_uart_handler
+                         0x800'878b    0x20  Code  Gb  zf_device_type.o [1]
+wireless_type           0x2000'4905     0x1  Data  Gb  zf_device_type.o [1]
+wireless_uart_callback   0x800'8e39    0x18  Code  Gb  zf_device_wireless_uart.o [1]
+wireless_uart_data      0x2000'4908     0x1  Data  Lc  zf_device_wireless_uart.o [1]
+wireless_uart_fifo      0x2000'4824    0x14  Data  Lc  zf_device_wireless_uart.o [1]
+write_flash_points      0x2000'4884     0x4  Data  Gb  main.o [1]
+write_in                 0x800'0f49   0x1ac  Code  Gb  route_generating.o [1]
+x_cursor                0x2000'0480     0x2  Data  Gb  main.o [1]
+y_cursor                0x2000'0482     0x2  Data  Gb  main.o [1]
+zf_debug_assert_enable  0x2000'0493     0x1  Data  Lc  zf_common_debug.o [1]
+zf_debug_init_flag      0x2000'48fc     0x1  Data  Lc  zf_common_debug.o [1]
+zhufei_nmmsl             0x800'2101   0x324  Code  Gb  gps.o [1]
+
+
+[1] = D:\极速越野\旧版程序\7.17 有刷 薇草修改\jisuyueye\iar\program\Debug\Obj
+[2] = dl7M_tlf.a
+[3] = m7M_tl.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  43 190 bytes of readonly  code memory
+   3 325 bytes of readonly  data memory
+  26 888 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

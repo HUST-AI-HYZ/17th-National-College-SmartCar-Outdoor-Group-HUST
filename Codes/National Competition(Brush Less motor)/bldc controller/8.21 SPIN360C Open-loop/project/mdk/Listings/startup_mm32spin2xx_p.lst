@@ -1,0 +1,1200 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;******************** (C) COPYRIGHT 2019 MindMotion ****
+                       ****************
+    2 00000000         ;* file               : startup_MM32SPIN2xx_p.s
+    3 00000000         ;* author             : AE Team
+    4 00000000         ;* version            : V1.1.0
+    5 00000000         ;* date               : 09/09/2019
+    6 00000000         ;* Description        : Amount of memory (in bytes) allo
+                       cated for Stack
+    7 00000000         ;                       Tailor this value to your applic
+                       ation needs
+    8 00000000         ; <h> Stack Configuration
+    9 00000000         ;   <o> Stack Size (in Bytes) <0x0-0xFFFFFFFF:8>
+   10 00000000         ; </h>
+   11 00000000         
+   12 00000000 00000400 
+                       Stack_Size
+                               EQU              0x00000400
+   13 00000000         
+   14 00000000                 AREA             STACK, NOINIT, READWRITE, ALIGN
+=3
+   15 00000000         Stack_Mem
+                               SPACE            Stack_Size
+   16 00000400         __initial_sp
+   17 00000400         
+   18 00000400         
+   19 00000400         ; <h> Heap Configuration
+   20 00000400         ;   <o>  Heap Size (in Bytes) <0x0-0xFFFFFFFF:8>
+   21 00000400         ; </h>
+   22 00000400         
+   23 00000400 00000200 
+                       Heap_Size
+                               EQU              0x00000200
+   24 00000400         
+   25 00000400                 AREA             HEAP, NOINIT, READWRITE, ALIGN=
+3
+   26 00000000         __heap_base
+   27 00000000         Heap_Mem
+                               SPACE            Heap_Size
+   28 00000200         __heap_limit
+   29 00000200         
+   30 00000200                 PRESERVE8
+   31 00000200                 THUMB
+   32 00000200         
+   33 00000200         
+   34 00000200         ; Vector Table Mapped to Address 0 at Reset
+   35 00000200                 AREA             RESET, DATA, READONLY
+   36 00000000                 EXPORT           __Vectors
+   37 00000000                 EXPORT           __Vectors_End
+   38 00000000                 EXPORT           __Vectors_Size
+   39 00000000         
+   40 00000000 00000000 
+                       __Vectors
+                               DCD              __initial_sp ; Top of Stack
+   41 00000004 00000000        DCD              Reset_Handler ; Reset Handler
+   42 00000008 00000000        DCD              NMI_Handler ; NMI Handler
+   43 0000000C 00000000        DCD              HardFault_Handler ; Hard Fault 
+                                                            Handler
+   44 00000010 00000000        DCD              MemManage_Handler ; MPU Fault H
+                                                            andler 
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+   45 00000014 00000000        DCD              BusFault_Handler 
+                                                            ; Bus Fault Handler
+                                                            
+   46 00000018 00000000        DCD              UsageFault_Handler ; Usage Faul
+                                                            t Handler
+   47 0000001C 00000000        DCD              0           ; Reserved
+   48 00000020 00000000        DCD              0           ; Reserved
+   49 00000024 00000000        DCD              0           ; Reserved
+   50 00000028 00000000        DCD              0           ; Reserved
+   51 0000002C 00000000        DCD              SVC_Handler ; SVCall Handler
+   52 00000030 00000000        DCD              DebugMon_Handler ; Debug Monito
+                                                            r Handler
+   53 00000034 00000000        DCD              0           ; Reserved
+   54 00000038 00000000        DCD              PendSV_Handler ; PendSV Handler
+                                                            
+   55 0000003C 00000000        DCD              SysTick_Handler 
+                                                            ; SysTick Handler
+   56 00000040         
+   57 00000040         ; External Interrupts
+   58 00000040 00000000        DCD              WWDG_IRQHandler 
+                                                            ; Window Watchdog
+   59 00000044 00000000        DCD              PVD_IRQHandler ; PVD through EX
+                                                            TI Line detect
+   60 00000048 00000000        DCD              PWM_IRQHandler ; Commutation an
+                                                            d input error inter
+                                                            rupt
+   61 0000004C 00000000        DCD              FLASH_IRQHandler ; FLASH
+   62 00000050 00000000        DCD              RCC_IRQHandler ; RCC 
+   63 00000054 00000000        DCD              EXTI0_1_IRQHandler 
+                                                            ; EXTI Line 0 and 1
+                                                            
+   64 00000058 00000000        DCD              EXTI2_3_IRQHandler 
+                                                            ; EXTI Line 2 and 3
+                                                            
+   65 0000005C 00000000        DCD              EXTI4_15_IRQHandler 
+                                                            ; EXTI Line 4 to 15
+                                                            
+   66 00000060 00000000        DCD              HWDIV_IRQHandler ; HWDIV
+   67 00000064 00000000        DCD              DMA1_Channel1_IRQHandler 
+                                                            ; DMA1 Channel 1
+   68 00000068 00000000        DCD              DMA1_Channel2_3_IRQHandler ; DM
+                                                            A1 Channel 2 and Ch
+                                                            annel 3
+   69 0000006C 00000000        DCD              DMA1_Channel4_5_IRQHandler ; DM
+                                                            A1 Channel 4 and Ch
+                                                            annel 5
+   70 00000070 00000000        DCD              ADC1_IRQHandler ; ADC1
+   71 00000074 00000000        DCD              TIM1_BRK_UP_TRG_COM_IRQHandler 
+                                                            ; TIM1 Break, Updat
+                                                            e, Trigger and Comm
+                                                            utation
+   72 00000078 00000000        DCD              TIM1_CC_IRQHandler ; TIM1 Captu
+                                                            re Compare
+   73 0000007C 00000000        DCD              TIM2_IRQHandler ; TIM2
+   74 00000080 00000000        DCD              TIM3_IRQHandler ; TIM3
+   75 00000084 00000000        DCD              TIM8_BRK_UP_TRG_COM_IRQHandler 
+                                                            ; TIM8 Brake, Updat
+                                                            e, Trigger and Comm
+                                                            utation
+
+
+
+ARM Macro Assembler    Page 3 
+
+
+   76 00000088 00000000        DCD              TIM8_CC_IRQHandler ; TIM8 Captu
+                                                            re Compare
+   77 0000008C 00000000        DCD              TIM14_IRQHandler ; TIM14
+   78 00000090 00000000        DCD              ADC2_IRQHandler ; ADC2
+   79 00000094 00000000        DCD              TIM16_IRQHandler ; TIM16
+   80 00000098 00000000        DCD              TIM17_IRQHandler ; TIM17
+   81 0000009C 00000000        DCD              I2C1_IRQHandler ; I2C1
+   82 000000A0 00000000        DCD              COMP1_2_3_4_5_IRQHandler 
+                                                            ; Comparators
+   83 000000A4 00000000        DCD              SPI1_IRQHandler ; SPI1
+   84 000000A8 00000000        DCD              SPI2_IRQHandler ; SPI2
+   85 000000AC 00000000        DCD              UART1_IRQHandler ; UART1
+   86 000000B0 00000000        DCD              UART2_IRQHandler ; UART2
+   87 000000B4         
+   88 000000B4         
+   89 000000B4         __Vectors_End
+   90 000000B4         
+   91 000000B4 000000B4 
+                       __Vectors_Size
+                               EQU              __Vectors_End - __Vectors
+   92 000000B4         
+   93 000000B4                 AREA             |.text|, CODE, READONLY
+   94 00000000         
+   95 00000000         ; Reset handler routine
+   96 00000000         Reset_Handler
+                               PROC
+   97 00000000                 EXPORT           Reset_Handler                 [
+WEAK]
+   98 00000000                 IMPORT           __main
+   99 00000000                 IMPORT           SystemInit
+  100 00000000         
+  101 00000000         
+  102 00000000         
+  103 00000000 4814            LDR              R0, =__initial_sp ; set stack p
+                                                            ointer 
+  104 00000002 F380 8808       MSR              MSP, R0
+  105 00000006         
+  106 00000006         ;;Check if boot space corresponds to test memory 
+  107 00000006         
+  108 00000006 4814            LDR              R0,=0x00000004
+  109 00000008 6801            LDR              R1, [R0]
+  110 0000000A 0E09            LSRS             R1, R1, #24
+  111 0000000C 4A13            LDR              R2,=0x1F
+  112 0000000E 4291            CMP              R1, R2
+  113 00000010         
+  114 00000010 D1FF            BNE              ApplicationStart
+  115 00000012         
+  116 00000012         ApplicationStart
+  117 00000012         
+  118 00000012 4813            LDR              R0,=0x4002101C
+  119 00000014 4913            LDR              R1,=0x04000000
+  120 00000016 6001            STR              R1, [R0]
+  121 00000018         
+  122 00000018 4813            LDR              R0,=0x40006818
+  123 0000001A 4914            LDR              R1,=0x00000012
+  124 0000001C 6001            STR              R1, [R0]
+  125 0000001E         
+  126 0000001E 4814            LDR              R0,=0x4000681C
+  127 00000020 4912            LDR              R1,=0x00000012
+
+
+
+ARM Macro Assembler    Page 4 
+
+
+  128 00000022 6001            STR              R1, [R0]
+  129 00000024         
+  130 00000024 480E            LDR              R0,=0x4002101C
+  131 00000026 4913            LDR              R1,=0x00000000
+  132 00000028 6001            STR              R1, [R0]
+  133 0000002A 4813            LDR              R0, =SystemInit
+  134 0000002C 4780            BLX              R0
+  135 0000002E 4813            LDR              R0, =__main
+  136 00000030 4700            BX               R0
+  137 00000032                 ENDP
+  138 00000032         
+  139 00000032         ; Dummy Exception Handlers (infinite loops which can be 
+                       modified)
+  140 00000032         
+  141 00000032         NMI_Handler
+                               PROC
+  142 00000032                 EXPORT           NMI_Handler                    
+[WEAK]
+  143 00000032 E7FE            B                .
+  144 00000034                 ENDP
+  146 00000034         HardFault_Handler
+                               PROC
+  147 00000034                 EXPORT           HardFault_Handler              
+[WEAK]
+  148 00000034 E7FE            B                .
+  149 00000036                 ENDP
+  151 00000036         MemManage_Handler
+                               PROC
+  152 00000036                 EXPORT           MemManage_Handler              
+[WEAK]
+  153 00000036 E7FE            B                .
+  154 00000038                 ENDP
+  156 00000038         BusFault_Handler
+                               PROC
+  157 00000038                 EXPORT           BusFault_Handler               
+[WEAK]
+  158 00000038 E7FE            B                .
+  159 0000003A                 ENDP
+  161 0000003A         UsageFault_Handler
+                               PROC
+  162 0000003A                 EXPORT           UsageFault_Handler             
+[WEAK]
+  163 0000003A E7FE            B                .
+  164 0000003C                 ENDP
+  165 0000003C         SVC_Handler
+                               PROC
+  166 0000003C                 EXPORT           SVC_Handler                    
+[WEAK]
+  167 0000003C E7FE            B                .
+  168 0000003E                 ENDP
+  170 0000003E         DebugMon_Handler
+                               PROC
+  171 0000003E                 EXPORT           DebugMon_Handler               
+[WEAK]
+  172 0000003E E7FE            B                .
+  173 00000040                 ENDP
+  174 00000040         PendSV_Handler
+                               PROC
+  175 00000040                 EXPORT           PendSV_Handler                 
+
+
+
+ARM Macro Assembler    Page 5 
+
+
+[WEAK]
+  176 00000040 E7FE            B                .
+  177 00000042                 ENDP
+  178 00000042         SysTick_Handler
+                               PROC
+  179 00000042                 EXPORT           SysTick_Handler                
+[WEAK]
+  180 00000042 E7FE            B                .
+  181 00000044                 ENDP
+  182 00000044         
+  183 00000044         Default_Handler
+                               PROC
+  184 00000044         
+  185 00000044                 EXPORT           WWDG_IRQHandler                
+[WEAK]
+  186 00000044                 EXPORT           PVD_IRQHandler                 
+[WEAK]
+  187 00000044                 EXPORT           PWM_IRQHandler                 
+[WEAK]
+  188 00000044                 EXPORT           FLASH_IRQHandler               
+[WEAK]
+  189 00000044                 EXPORT           RCC_IRQHandler                 
+[WEAK]
+  190 00000044                 EXPORT           EXTI0_1_IRQHandler             
+[WEAK]
+  191 00000044                 EXPORT           EXTI2_3_IRQHandler             
+[WEAK]
+  192 00000044                 EXPORT           EXTI4_15_IRQHandler            
+[WEAK]
+  193 00000044                 EXPORT           HWDIV_IRQHandler               
+[WEAK]
+  194 00000044                 EXPORT           DMA1_Channel1_IRQHandler       
+[WEAK]
+  195 00000044                 EXPORT           DMA1_Channel2_3_IRQHandler     
+[WEAK]
+  196 00000044                 EXPORT           DMA1_Channel4_5_IRQHandler     
+[WEAK]
+  197 00000044                 EXPORT           ADC1_IRQHandler                
+[WEAK]
+  198 00000044                 EXPORT           TIM1_BRK_UP_TRG_COM_IRQHandler 
+[WEAK]
+  199 00000044                 EXPORT           TIM1_CC_IRQHandler             
+[WEAK]
+  200 00000044                 EXPORT           TIM2_IRQHandler                
+[WEAK]
+  201 00000044                 EXPORT           TIM3_IRQHandler                
+[WEAK]
+  202 00000044                 EXPORT           TIM8_BRK_UP_TRG_COM_IRQHandler 
+[WEAK]
+  203 00000044                 EXPORT           TIM8_CC_IRQHandler             
+[WEAK]
+  204 00000044                 EXPORT           TIM14_IRQHandler               
+[WEAK]
+  205 00000044                 EXPORT           ADC2_IRQHandler                
+[WEAK]
+  206 00000044                 EXPORT           TIM16_IRQHandler               
+[WEAK]
+  207 00000044                 EXPORT           TIM17_IRQHandler               
+[WEAK]
+
+
+
+ARM Macro Assembler    Page 6 
+
+
+  208 00000044                 EXPORT           I2C1_IRQHandler                
+[WEAK]
+  209 00000044                 EXPORT           COMP1_2_3_4_5_IRQHandler       
+[WEAK]
+  210 00000044                 EXPORT           SPI1_IRQHandler                
+[WEAK]
+  211 00000044                 EXPORT           SPI2_IRQHandler                
+[WEAK]
+  212 00000044                 EXPORT           UART1_IRQHandler               
+[WEAK]
+  213 00000044                 EXPORT           UART2_IRQHandler               
+[WEAK]
+  214 00000044         
+  215 00000044         
+  216 00000044         
+  217 00000044         WWDG_IRQHandler
+  218 00000044         PVD_IRQHandler
+  219 00000044         PWM_IRQHandler
+  220 00000044         FLASH_IRQHandler
+  221 00000044         RCC_IRQHandler
+  222 00000044         EXTI0_1_IRQHandler
+  223 00000044         EXTI2_3_IRQHandler
+  224 00000044         EXTI4_15_IRQHandler
+  225 00000044         HWDIV_IRQHandler
+  226 00000044         DMA1_Channel1_IRQHandler
+  227 00000044         DMA1_Channel2_3_IRQHandler
+  228 00000044         DMA1_Channel4_5_IRQHandler
+  229 00000044         ADC1_IRQHandler
+  230 00000044         TIM1_BRK_UP_TRG_COM_IRQHandler
+  231 00000044         TIM1_CC_IRQHandler
+  232 00000044         TIM2_IRQHandler
+  233 00000044         TIM3_IRQHandler
+  234 00000044         TIM8_BRK_UP_TRG_COM_IRQHandler
+  235 00000044         TIM8_CC_IRQHandler
+  236 00000044         TIM14_IRQHandler
+  237 00000044         ADC2_IRQHandler
+  238 00000044         TIM16_IRQHandler
+  239 00000044         TIM17_IRQHandler
+  240 00000044         I2C1_IRQHandler
+  241 00000044         COMP1_2_3_4_5_IRQHandler
+  242 00000044         SPI1_IRQHandler
+  243 00000044         SPI2_IRQHandler
+  244 00000044         UART1_IRQHandler
+  245 00000044         UART2_IRQHandler
+  246 00000044         
+  247 00000044         
+  248 00000044 E7FE            B                .
+  249 00000046         
+  250 00000046                 ENDP
+  251 00000046         
+  252 00000046 00 00           ALIGN
+  253 00000048         
+  254 00000048         ;*******************************************************
+                       ************************
+  255 00000048         ; User Stack and Heap initialization
+  256 00000048         ;*******************************************************
+                       ************************
+  257 00000048                 IF               :DEF:__MICROLIB
+  264 00000048         
+
+
+
+ARM Macro Assembler    Page 7 
+
+
+  265 00000048                 IMPORT           __use_two_region_memory
+  266 00000048                 EXPORT           __user_initial_stackheap
+  267 00000048         
+  268 00000048         __user_initial_stackheap
+  269 00000048         
+  270 00000048 480D            LDR              R0, =  Heap_Mem
+  271 0000004A 490E            LDR              R1, =(Stack_Mem + Stack_Size)
+  272 0000004C 4A0E            LDR              R2, = (Heap_Mem +  Heap_Size)
+  273 0000004E 4B0F            LDR              R3, = Stack_Mem
+  274 00000050 4770            BX               LR
+  275 00000052         
+  276 00000052 00 00           ALIGN
+  277 00000054         
+  278 00000054                 ENDIF
+  279 00000054         
+  280 00000054                 END
+              00000000 
+              00000004 
+              0000001F 
+              4002101C 
+              04000000 
+              40006818 
+              00000012 
+              4000681C 
+              00000000 
+              00000000 
+              00000000 
+              00000000 
+              00000400 
+              00000200 
+              00000000 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0 --apcs=interw
+ork --depend=.\objects\startup_mm32spin2xx_p.d -o.\objects\startup_mm32spin2xx_
+p.o -I.\RTE\_seekfree_bldc -IE:\keil5\ARM\PACK\MindMotion\MM32SPIN2x_DFP\1.1.6\
+Device\MM32SPIN2x\Include -IE:\keil5\ARM\CMSIS\Include -IE:\keil5\ARM\PACK\Mind
+Motion\MM32SPIN2x_DFP\1.1.6\Device\MM32SPIN_XX\Include --predefine="__UVISION_V
+ERSION SETA 525" --predefine="MM32SPIN27PF SETA 1" --list=.\listings\startup_mm
+32spin2xx_p.lst ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_StartAsm\star
+tup_MM32SPIN2xx_p.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+STACK 00000000
+
+Symbol: STACK
+   Definitions
+      At line 14 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      None
+Comment: STACK unused
+Stack_Mem 00000000
+
+Symbol: Stack_Mem
+   Definitions
+      At line 15 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 271 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+      At line 273 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+__initial_sp 00000400
+
+Symbol: __initial_sp
+   Definitions
+      At line 16 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 40 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 103 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+HEAP 00000000
+
+Symbol: HEAP
+   Definitions
+      At line 25 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      None
+Comment: HEAP unused
+Heap_Mem 00000000
+
+Symbol: Heap_Mem
+   Definitions
+      At line 27 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 270 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+      At line 272 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+__heap_base 00000000
+
+Symbol: __heap_base
+   Definitions
+      At line 26 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      None
+Comment: __heap_base unused
+__heap_limit 00000200
+
+Symbol: __heap_limit
+   Definitions
+      At line 28 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      None
+Comment: __heap_limit unused
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 35 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 40 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 36 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 91 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+
+__Vectors_End 000000B4
+
+Symbol: __Vectors_End
+   Definitions
+      At line 89 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 37 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 91 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 93 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      None
+Comment: .text unused
+ADC1_IRQHandler 00000044
+
+Symbol: ADC1_IRQHandler
+   Definitions
+      At line 229 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 70 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 197 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+ADC2_IRQHandler 00000044
+
+Symbol: ADC2_IRQHandler
+   Definitions
+      At line 237 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 78 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 205 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+ApplicationStart 00000012
+
+Symbol: ApplicationStart
+   Definitions
+      At line 116 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 114 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+Comment: ApplicationStart used once
+BusFault_Handler 00000038
+
+Symbol: BusFault_Handler
+   Definitions
+      At line 156 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 45 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 157 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+COMP1_2_3_4_5_IRQHandler 00000044
+
+Symbol: COMP1_2_3_4_5_IRQHandler
+   Definitions
+
+
+
+ARM Macro Assembler    Page 2 Alphabetic symbol ordering
+Relocatable symbols
+
+      At line 241 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 82 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 209 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+DMA1_Channel1_IRQHandler 00000044
+
+Symbol: DMA1_Channel1_IRQHandler
+   Definitions
+      At line 226 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 67 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 194 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+DMA1_Channel2_3_IRQHandler 00000044
+
+Symbol: DMA1_Channel2_3_IRQHandler
+   Definitions
+      At line 227 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 68 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 195 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+DMA1_Channel4_5_IRQHandler 00000044
+
+Symbol: DMA1_Channel4_5_IRQHandler
+   Definitions
+      At line 228 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 69 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 196 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+DebugMon_Handler 0000003E
+
+Symbol: DebugMon_Handler
+   Definitions
+      At line 170 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 52 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 171 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+Default_Handler 00000044
+
+Symbol: Default_Handler
+
+
+
+ARM Macro Assembler    Page 3 Alphabetic symbol ordering
+Relocatable symbols
+
+   Definitions
+      At line 183 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      None
+Comment: Default_Handler unused
+EXTI0_1_IRQHandler 00000044
+
+Symbol: EXTI0_1_IRQHandler
+   Definitions
+      At line 222 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 63 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 190 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+EXTI2_3_IRQHandler 00000044
+
+Symbol: EXTI2_3_IRQHandler
+   Definitions
+      At line 223 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 64 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 191 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+EXTI4_15_IRQHandler 00000044
+
+Symbol: EXTI4_15_IRQHandler
+   Definitions
+      At line 224 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 65 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 192 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+FLASH_IRQHandler 00000044
+
+Symbol: FLASH_IRQHandler
+   Definitions
+      At line 220 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 61 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 188 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+HWDIV_IRQHandler 00000044
+
+Symbol: HWDIV_IRQHandler
+   Definitions
+      At line 225 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+
+
+
+ARM Macro Assembler    Page 4 Alphabetic symbol ordering
+Relocatable symbols
+
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 66 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 193 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+HardFault_Handler 00000034
+
+Symbol: HardFault_Handler
+   Definitions
+      At line 146 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 43 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 147 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+I2C1_IRQHandler 00000044
+
+Symbol: I2C1_IRQHandler
+   Definitions
+      At line 240 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 81 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 208 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+MemManage_Handler 00000036
+
+Symbol: MemManage_Handler
+   Definitions
+      At line 151 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 44 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 152 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+NMI_Handler 00000032
+
+Symbol: NMI_Handler
+   Definitions
+      At line 141 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 42 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 142 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+PVD_IRQHandler 00000044
+
+Symbol: PVD_IRQHandler
+   Definitions
+
+
+
+ARM Macro Assembler    Page 5 Alphabetic symbol ordering
+Relocatable symbols
+
+      At line 218 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 59 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 186 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+PWM_IRQHandler 00000044
+
+Symbol: PWM_IRQHandler
+   Definitions
+      At line 219 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 60 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 187 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+PendSV_Handler 00000040
+
+Symbol: PendSV_Handler
+   Definitions
+      At line 174 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 54 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 175 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+RCC_IRQHandler 00000044
+
+Symbol: RCC_IRQHandler
+   Definitions
+      At line 221 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 62 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 189 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 96 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 41 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 97 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+
+SPI1_IRQHandler 00000044
+
+Symbol: SPI1_IRQHandler
+
+
+
+ARM Macro Assembler    Page 6 Alphabetic symbol ordering
+Relocatable symbols
+
+   Definitions
+      At line 242 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 83 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 210 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+SPI2_IRQHandler 00000044
+
+Symbol: SPI2_IRQHandler
+   Definitions
+      At line 243 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 84 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 211 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+SVC_Handler 0000003C
+
+Symbol: SVC_Handler
+   Definitions
+      At line 165 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 51 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 166 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+SysTick_Handler 00000042
+
+Symbol: SysTick_Handler
+   Definitions
+      At line 178 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 55 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 179 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+TIM14_IRQHandler 00000044
+
+Symbol: TIM14_IRQHandler
+   Definitions
+      At line 236 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 77 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 204 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+TIM16_IRQHandler 00000044
+
+
+
+
+ARM Macro Assembler    Page 7 Alphabetic symbol ordering
+Relocatable symbols
+
+Symbol: TIM16_IRQHandler
+   Definitions
+      At line 238 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 79 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 206 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+TIM17_IRQHandler 00000044
+
+Symbol: TIM17_IRQHandler
+   Definitions
+      At line 239 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 80 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 207 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+TIM1_BRK_UP_TRG_COM_IRQHandler 00000044
+
+Symbol: TIM1_BRK_UP_TRG_COM_IRQHandler
+   Definitions
+      At line 230 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 71 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 198 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+TIM1_CC_IRQHandler 00000044
+
+Symbol: TIM1_CC_IRQHandler
+   Definitions
+      At line 231 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 72 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 199 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+TIM2_IRQHandler 00000044
+
+Symbol: TIM2_IRQHandler
+   Definitions
+      At line 232 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 73 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 200 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+TIM3_IRQHandler 00000044
+
+
+
+ARM Macro Assembler    Page 8 Alphabetic symbol ordering
+Relocatable symbols
+
+
+Symbol: TIM3_IRQHandler
+   Definitions
+      At line 233 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 74 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 201 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+TIM8_BRK_UP_TRG_COM_IRQHandler 00000044
+
+Symbol: TIM8_BRK_UP_TRG_COM_IRQHandler
+   Definitions
+      At line 234 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 75 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 202 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+TIM8_CC_IRQHandler 00000044
+
+Symbol: TIM8_CC_IRQHandler
+   Definitions
+      At line 235 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 76 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 203 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+UART1_IRQHandler 00000044
+
+Symbol: UART1_IRQHandler
+   Definitions
+      At line 244 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 85 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 212 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+UART2_IRQHandler 00000044
+
+Symbol: UART2_IRQHandler
+   Definitions
+      At line 245 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 86 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 213 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+
+
+
+ARM Macro Assembler    Page 9 Alphabetic symbol ordering
+Relocatable symbols
+
+UsageFault_Handler 0000003A
+
+Symbol: UsageFault_Handler
+   Definitions
+      At line 161 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 46 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 162 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+WWDG_IRQHandler 00000044
+
+Symbol: WWDG_IRQHandler
+   Definitions
+      At line 217 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 58 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 185 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+__user_initial_stackheap 00000048
+
+Symbol: __user_initial_stackheap
+   Definitions
+      At line 268 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 266 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+Comment: __user_initial_stackheap used once
+43 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+Heap_Size 00000200
+
+Symbol: Heap_Size
+   Definitions
+      At line 23 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 27 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 272 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+Stack_Size 00000400
+
+Symbol: Stack_Size
+   Definitions
+      At line 12 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 15 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+      At line 271 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+
+__Vectors_Size 000000B4
+
+Symbol: __Vectors_Size
+   Definitions
+      At line 91 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 38 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+Comment: __Vectors_Size used once
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+SystemInit 00000000
+
+Symbol: SystemInit
+   Definitions
+      At line 99 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 133 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+Comment: SystemInit used once
+__main 00000000
+
+Symbol: __main
+   Definitions
+      At line 98 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Star
+tAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      At line 135 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+Comment: __main used once
+__use_two_region_memory 00000000
+
+Symbol: __use_two_region_memory
+   Definitions
+      At line 265 in file ..\..\Libraries\sdk\MM32SPIN2xx_p_LIB\Source\KEIL_Sta
+rtAsm\startup_MM32SPIN2xx_p.s
+   Uses
+      None
+Comment: __use_two_region_memory unused
+3 symbols
+395 symbols in table
